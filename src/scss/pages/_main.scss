@@ -1,0 +1,84 @@
+.mainContainer{
+  background-image: imgPath('imgMain.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  &-sectionOne{
+    .titleContainer{
+      //background-color: rgb(133, 25, 25);
+    }
+  }
+  &-body_b1{
+    //background-color: rgb(133, 25, 25);
+    text-align: justify;
+    padding-right: 1rem;
+    span{
+      font-weight: bold;
+    }
+  }
+  &-links{
+    //background-color: rgb(124, 102, 28);
+    padding: 1rem;
+    margin-right: 1rem;
+    .infoContainer-intro{
+      padding: 0 1rem;
+    }
+  }
+  &-sectionTwo{
+    background-color: rgba(50, 52, 141, .2);
+    border-radius: 3rem 0 0 3rem;
+    margin-bottom: 2rem;
+    .titleContainer{
+      //background-color: rgb(133, 25, 25);
+      .figure{
+        margin-left: 0;
+        border-left: 0;
+        border-right: 3rem solid $clResalte;
+      }
+      &-title{
+        text-align: right;
+        margin-right: -2.5rem;
+        margin-top: -1.5rem;
+      }
+    }
+    .mainContainer-text p{
+      font-weight: bold;
+    }
+  }
+  // .infoContainer-intro{
+  //     a {
+  //       // background-color: red;
+  //       color:$rojoOxford;
+  //       font-size: $t3;
+  //       transition: all .3s ease-in-out;
+  //       &:hover{
+  //         color: $azulOxford;
+  //       }
+  //     }
+  //   }
+  &-body_b2{
+    // margin-left: -7rem;
+    span{
+      font-weight: normal;
+      font-style: italic;
+      margin-left: .5rem;
+    }
+  }
+  &-sectionThree{
+    text-align: justify;
+    margin-right: 1rem;
+  }
+  // ESTILOS PARA LA SECCION TRES DE LA PAGINA DE INSTITUCIÓN ======
+  &-boxInfo{
+    //background-color: rgb(221, 29, 238);
+    .wrapOne{
+      background-color: lighten($clAlterno, $amount: 40%);
+      margin: -1rem 10rem 1rem -5rem;
+    }
+    .wrapTwo{
+      background-color: lighten($clAlterno, $amount: 40%);
+      margin: -1rem 5rem 1rem 0;
+    }
+  }
+
+}

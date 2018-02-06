@@ -1,0 +1,56 @@
+.hero{
+  background-image: imgPath('imgHero.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
+  &-logo{
+    @include centerFlex;
+
+  }
+  &-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+    text-align: right;
+    color: $clBase;
+    //font-family: $ftOswald;
+    &_principal{
+      //background-color: rgb(90, 11, 79);
+      order: 2;
+      letter-spacing: 0.35rem;
+    }
+    &_secondary{
+      //background-color: rgb(10, 126, 78);
+      order: 0;
+      letter-spacing: .055rem;
+
+    }
+    &_emphasis{
+      //background-color: rgb(41, 8, 133);
+      order: 1;
+      letter-spacing: -.1rem;
+      margin:-.45rem 0;
+    }
+  }
+  &-phrase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_title{
+      color: $clTextoGen;
+      font-weight: $medium;
+    }
+    &_description{
+      color:$clSecondary;
+      font-weight: $ligth;
+    }
+    &_slogan{
+      color: $azulOxford;
+    }
+  }
+
+}
+
+

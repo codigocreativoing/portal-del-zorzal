@@ -1,0 +1,15 @@
+include ./components/config.pug
+include ./components/header_poster.pug
+include ./components/services_presentation.pug
+
+
+
+//- nota: crear los modulos para la presentación de servicios
+section#servicios.wrap
+    +headerPoster('QUE', 'HACEMOS', 'Una pasion, un servicio', 'Nuestro objetivo principal es ayudarte a crecer en el comercio actual y frente a una sociedad de consumo mas globalizada con el desarrollo de soluciones hechas a la medida de tus necesidades y las espectativas de tus clientes.')
+
+    section.services
+      +servicesPresentation("./images/sitiosweb.png", "Icono para Desarrollo de Sitios WEB", "Sitios", "WEB", "Posiciona ahora tu empresa de forma GLOBAL.")
+      +servicesPresentation("./images/apps.png","Icono para Desarrollo de Aplicaciones Móviles", "Aplicaciones", "Móviles","Productos en manos de todos, Porque tus clientes están en todos lados.")
+      +servicesPresentation("./images/motion.png","Icono para Desarrollo de Motion Graphics", "Motion", "Graphics","Tus ideas y tu imágen ahora cobran vida.")
+      +servicesPresentation("./images/animation.png","Icono para Animación 2D y 3D", "Diseño 2D y", "3D Publicitario","No solo una imagen habla bien de tu empresa.")

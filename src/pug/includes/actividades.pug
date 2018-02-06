@@ -1,0 +1,90 @@
+
+setion#actividades.activitiesContainer
+  .activitiesContainer-sectionOne
+    .slide
+      .slide-imageContainer
+        .galeryModal#page
+          +ligthBox([
+            ['imgActividades1.jpg', 'Texto alterno', 'AMISTAD', '“Todos seguimos caminos diferentes en la vida, pero, da igual dónde y hacia dónde vayamos, ya que siempre llevamos una pequeña parte del otro dentro de nosotros “'],
+            ['imgActividades2.jpg', 'Texto alterno', 'COMPAÑERISMO', '"Al escalar una gran montaña nadie deja a un compañero para alcanzar la cima solo."'],
+            ['imgActividades3.jpg', 'Texto alterno', 'RESPONSABILIDAD', '"Cuando dices que es difícil, significa que no eres lo suficientemente fuerte como para luchar por ello."'],
+            ['imgActividades4.jpg', 'Texto alterno', 'FRATERNIDAD', 'Entre “plantar y cosechar”, existe un “regar y esperar”.'],
+            ['imgActividades5.jpg', 'Texto alterno', 'INTEGRACIÓN', '"Las fortalezas están en nuestras diferencias, no en nuestras similitudes"'],
+            ['imgActividades6.jpg', 'Texto alterno', 'ESPONTANEIDAD', '"Al final, lo que importa no son los años de vida, sino la vida de los años"'],
+            ['imgActividades7.jpg', 'Texto alterno', 'MUTUALISMO', '"Lo más difícil es tomar la decisión de actuar, el resto no es más que tenacidad."'],
+            ['imgActividades8.jpg', 'Texto alterno', 'ALEGRIA', '"El objetivo primordial del ser humano debe ser vivir lo más feliz posible sin perjudicar la felicidad de los demás"']
+          ])
+      .slide-reviewContainer
+        .slide-reviewContainer_figure
+        .slide-reviewContainer_wrap
+          .slide-reviewContainer_tex
+            //- p.textDescrip Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi accusantium rem?
+    .infoContainer.activitiesInfo
+      +headerTitle('NUESTRAS', 'ACTIVIDADES')
+      .activitiesInfo-body
+        .activitiesInfo-bodyTitle
+          h4 Un scout es alguien inspirador y motivador en su comunidad.
+        .activitiesInfo-bodyText
+          p Todo Scout debe estar involucrado en el servicio a su comunidad, y compartir su experiencia para inspirar a los demás. Mediante actividades y proyectos, los Scouts contribuyen a sus comunidades y se convierten en líderes de un cambio positivo...
+      .infoContainer.activitiesInfo-links
+        .activitiesInfo-inOne
+          +titleLinks('AMIGOS', 'POR SIEMPRE', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cumque.', 'amigos')
+        .activitiesInfo-inTwo
+          +titleLinks('CAMPAÑA', 'TAPATON', 'Lorem ipsum dolor sit adipisicing elit. Recusandae facere vest , unde aliquid!', 'tapaton')
+        .activitiesInfo-inthree
+          +titleLinks('SCOUTS', 'POR UN DÍA', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis!', 'dia')
+  .activitiesContainer-sectionTwo
+    .activitiesContainer-infoImagesOne
+      +boxInfoImages('CHOCOLATADAS', 'Est, aperiam odit praesentium animi deleniti', 'SÚMATE', 'Vero quae libero dolores tempore nesciunt et ab ex enim totam laboriosam soluta excepturi voluptatibus at quasi nihil expedita dignissimos, eaque quos animi.')
+        block galeria
+          .galery
+            +galeria([
+              ['uno', 'true'],
+              ['dos'],
+              ['tres'],
+              ['cuatro'],
+              ],
+              [['cho1.jpg', 'Un nuevo array'],
+              ['cho2.jpg', 'prueba perfecta'],
+              ['cho3.jpg', 'buena validacion'],
+              ['cho4.jpg', 'salio todo correcto'],
+              ['cho5.jpg', 'salio todo correcto'],
+              ['cho6.jpg', 'salio todo correcto'],
+              ['cho7.jpg', 'salio todo correcto'],
+              ['cho8.jpg', 'salio todo correcto']
+              ])
+    .activitiesContainer-infoImagesTwo
+      +boxInfoImages('CANASTA DEL AMOR', 'Est, aperiam odit praesentium animi deleniti', 'OXFORD', 'Vero quae libero dolores tempore nesciunt et ab ex enim totam laboriosam soluta excepturi voluptatibus at quasi nihil expedita dignissimos, eaque quos animi.')
+        block galeria
+          block append galeria
+            -nameInput='GaleriaDos'
+          .galery
+            +galeria([
+              ['uno'],
+              ['dos', 'true'],
+              ['tres'],
+              ['cuatro'],
+              ],
+              [['ab1.jpg', 'otrooooo Un nuevo array'],
+              ['imgCanasta.jpg', 'prueba perfecta'],
+              ['ab3.jpg', 'buena validacion'],
+              ['ab4.jpg', 'salio todo correcto']
+              ])
+    .activitiesContainer-infoImagesThree
+      +boxInfoImages('TERCERA EDAD', 'Est, aperiam odit praesentium animi deleniti', 'SÚMATE', 'Vero quae libero dolores tempore nesciunt et ab ex enim totam laboriosam soluta excepturi voluptatibus at quasi nihil expedita dignissimos, eaque quos animi.')
+        block galeria
+          block append galeria
+            -nameInput='GaleriaTres'
+          .galery
+            +galeria([
+              ['uno'],
+              ['dos'],
+              ['tres', 'true'],
+              ['cuatro'],
+              ],
+              [['ab5.jpg', 'otrooooo Un nuevo array'],
+              ['ab6.jpg', 'prueba perfecta'],
+              ['ab7.jpg', 'buena validacion'],
+              ['ab8.jpg', 'salio todo correcto']
+              ])
+

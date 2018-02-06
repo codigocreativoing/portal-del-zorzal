@@ -1,0 +1,35 @@
+body{
+  display              : grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.hero{
+  grid-column: 1 / -1;
+  height: 100vh;
+  //background-color: purple;
+}
+.mainContainer
+{
+  grid-column: 1 / -1;
+  height: 200vh;
+  //background-color: blueviolet;
+}
+.activitiesContainer{
+  grid-column: 1 / -1;
+  height: 200vh;
+  // background-color: #bd2be2;
+}
+.groupsContainer{
+  grid-column: 1 / -1;
+  height: 100vh;
+  // background-color: #7a049b;
+}
+.contactContainer{
+  grid-column: 1 / -1;
+  height: 100vh;
+  // background-color: #8f0583;
+}
+.piePagina{
+  grid-column: 1 / -1;
+  height: 50vh;
+  background-color: #6706c2;
+}
