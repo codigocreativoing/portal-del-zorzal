@@ -1,0 +1,11 @@
+body {
+    .location {
+        background-color: bisque;
+        &-map{
+          background-color: royalblue;
+        }
+        &-mapText{
+          background-color: seagreen;
+        }
+    }
+}

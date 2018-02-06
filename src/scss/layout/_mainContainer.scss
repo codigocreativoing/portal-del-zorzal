@@ -1,0 +1,15 @@
+body {
+    .mainContainer {
+      display: grid;
+      grid-template-rows: 10% 60% 20%;
+        background-color: blue;
+        &-info{
+          grid-row: 1 / 2;
+          background-color: peru;
+        }
+        &-descrip{
+          grid-row: 2 / 3;
+          background-color: purple;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+body {
+    // background-color: gray;
+    .headerM {
+        display: grid;
+        grid-template-rows: 10% 40% 10% 40%;
+        // background-color: yellow;
+
+        &-slider {
+            // grid-column: 1 / -1;
+            // background-color: palevioletred;
+            grid-row: 2 / 3;
+        }
+
+        &-project {
+            // grid-column: 1 / -1;
+            // background-color: orangered;
+            grid-row: 3 / 4;
+        }
+
+        &-info {
+            // background-color: orchid;
+            grid-row: 4 / -1;
+        }
+    }
+}
