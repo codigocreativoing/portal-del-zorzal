@@ -1,5 +1,5 @@
 body
-  header.headerM#incicio
+  header.headerM#inicio
     section.headerM-slider
       .galery
         +galeria([
@@ -34,27 +34,47 @@ body
         h4 Construye
         h4 Promotor
   main.mainContainer#proyecto
-    section.mainContainer-info
-      p prueba
+    section.mainContainer-infoBox.u-firstContent
+        .infoBoxWrap.iBG01
+          .image
+          .content
+            h4.titleInfoBox CÓMODAS HABITACIONES
+            p Es un hecho bien establecido que un lector se distraerá del contenido legible de una página cuando mire su diseño.
+        .infoBoxWrap.iBG02
+          .image
+          .content
+            h4.titleInfoBox ELEMENTOS ÚNICOS
+            p Espacios cuidadosamente diseñados, con caracteristicas equilibradas entre diseño y utilidad.
+        .infoBoxWrap.iBG03
+          .image
+          .content
+            h4.titleInfoBox ELEMENTOS ÚNICOS
+            p Áreas justas, teniendo en cuenta de ofrecer calidad de vida.
     .mainContainer-descrip
       h2.titleDescrip ESPACIOS SOSTENIBLES PARA SU BIENESTAR Y CONFORT
-      ul
-        li Terraza comunal BBQ
-        li Videovigilancia
-        li Bicicleteros
-        li Salón Comunal
-        li Depósitos
-        li Ascensor
-        li Excelente ubicación
+      ul.listDescrip.u01
+        li #[i.fa.fa-chevron-circle-right] Terraza comunal BBQ
+        li #[i.fa.fa-chevron-circle-right] Videovigilancia
+        li #[i.fa.fa-chevron-circle-right] Bicicleteros
+        li #[i.fa.fa-chevron-circle-right] Salón Comunal
+      ul.listDescrip.u02
+        li #[i.fa.fa-chevron-circle-right] Depósitos
+        li #[i.fa.fa-chevron-circle-right] Ascensor
+        li #[i.fa.fa-chevron-circle-right] Excelente ubicación
   section.location#ubicacion
       .location-map
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7953.144034337733!2d-74.0865302!3d4.6701265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b065f8400af%3A0xa0a9e6854d72cc77!2sCl.+67+%2363-65%2C+Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1517985816425" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       .location-mapText
-        h2 UBICACIÓN
-      .lovation-address
-        p CALLE 67A # 63-65
-        p BARRIO JJ VARGAS
-        p BOGOTÁ D.C.
-  section.contactContainer#contactos
+        .locationWrap
+          h3 UBICACIÓN
+          .location-address
+            .location-icon
+              i.fa.fa-map-marker
+            .location-text
+              p CALLE 67A # 63-65
+              p BARRIO JJ VARGAS
+              p BOGOTÁ D.C.
+  section.contactContainer#contacto
     .contactContainer-address
       h2.contact-title CONTACTO:
       .contact-phones

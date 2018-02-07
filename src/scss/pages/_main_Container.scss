@@ -1,0 +1,78 @@
+body {
+  .mainContainer {
+    // background-color: red;
+    &-infoBox {
+      // background-color: rosybrown;
+      display: flex;
+      justify-content: space-around;
+      .infoBoxWrap{
+        // background-color: purple;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .image{
+          width: 400px;
+          height: 250px;
+        }
+        .content{
+          height: 8rem;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          .titleInfoBox{
+            padding-top: .5rem;
+          }
+          p{
+            text-align: center;
+          }
+        }
+      }
+      .iBG01{
+        .image{
+          background-image: url('./images/slide03.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          object-fit: contain;
+        }
+      }
+      .iBG02 {
+        .image {
+            background-image: url("./images/slide04.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            object-fit: contain;
+        }
+      }
+      .iBG03 {
+        .image {
+            background-image: url("./images/slide02.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            object-fit: contain;
+        }
+      }
+
+    }
+    &-descrip {
+      .titleDescrip{
+        background-color: $resalte;
+        color: $clTextoGen;
+        text-align: center;
+      }
+      .listDescrip{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        .fa{
+          color: $color;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}

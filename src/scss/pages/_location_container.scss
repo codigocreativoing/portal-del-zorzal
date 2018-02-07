@@ -1,0 +1,55 @@
+body {
+  .location {
+    &-map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // height: 50%;
+    }
+    &-mapText {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .locationWrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .location-address{
+        background-color: $color;
+        width: 35rem;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        color: $clTextoGen;
+      }
+      .location-icon {
+        // background-color: red;
+        width: 40%;
+        margin-right: -3.5rem;
+        // text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6.5rem;
+      }
+      .location-text {
+        // background-color: aliceblue;
+        width: 60%;
+        padding: 1rem 10rem 1rem 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        p{
+          display: inline;
+          width: 100%;
+        }
+        // text-align: left;
+      }
+    }
+  }
+}

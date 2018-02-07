@@ -2419,7 +2419,7 @@ h2 {
 h3 {
   font-size: 1rem;
   font-family: "Oswald", sans-serif;
-  color: #f0b68c; }
+  color: #f7bb93; }
   @media screen and (min-width: 440px) {
     h3 {
       font-size: 1rem; } }
@@ -2438,7 +2438,6 @@ a {
   font-family: "Roboto", sans-serif; }
 
 body {
-  background-color: gray;
   display: grid;
   grid-template-columns: repeat(8, 1fr); }
   body .headerM {
@@ -2477,21 +2476,22 @@ body .headerM {
 
 body .mainContainer {
   display: grid;
-  grid-template-rows: 10% 60% 20%;
-  background-color: blue; }
-  body .mainContainer-info {
-    grid-row: 1 / 2;
-    background-color: peru; }
+  grid-template-rows: 10% 60% 20%; }
+  body .mainContainer-infoBox {
+    grid-row: 2 / 3; }
   body .mainContainer-descrip {
-    grid-row: 2 / 3;
-    background-color: purple; }
+    grid-row: 3 / -1; }
 
 body .location {
-  background-color: bisque; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 90%; }
   body .location-map {
-    background-color: royalblue; }
+    grid-column: 1;
+    grid-row: 2; }
   body .location-mapText {
-    background-color: seagreen; }
+    grid-column: 2;
+    grid-row: 2; }
 
 body .contact {
   background-color: pink; }
@@ -2575,7 +2575,7 @@ body footer {
     text-decoration: none;
     transition: all .3s ease-out; }
   .Menu-link:hover {
-    color: #b8d640;
+    color: #666666;
     text-transform: uppercase;
     transition: all .5s ease-out;
     background-color: #fff; }
@@ -2603,7 +2603,7 @@ body footer {
     .Menu-link {
       border-top: medium solid transparent; }
     .Menu-link:hover {
-      border-top: medium solid #b8d640;
+      border-top: medium solid #666666;
       background-color: transparent; } }
 
 .galery {
@@ -2696,3 +2696,97 @@ body .headerM {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+
+body .mainContainer-infoBox {
+  display: flex;
+  justify-content: space-around; }
+  body .mainContainer-infoBox .infoBoxWrap {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    body .mainContainer-infoBox .infoBoxWrap .image {
+      width: 400px;
+      height: 250px; }
+    body .mainContainer-infoBox .infoBoxWrap .content {
+      height: 8rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      body .mainContainer-infoBox .infoBoxWrap .content .titleInfoBox {
+        padding-top: .5rem; }
+      body .mainContainer-infoBox .infoBoxWrap .content p {
+        text-align: center; }
+  body .mainContainer-infoBox .iBG01 .image {
+    background-image: url("./images/slide03.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain; }
+  body .mainContainer-infoBox .iBG02 .image {
+    background-image: url("./images/slide04.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain; }
+  body .mainContainer-infoBox .iBG03 .image {
+    background-image: url("./images/slide02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain; }
+
+body .mainContainer-descrip .titleDescrip {
+  background-color: #666666;
+  color: #fff;
+  text-align: center; }
+
+body .mainContainer-descrip .listDescrip {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  list-style: none; }
+  body .mainContainer-descrip .listDescrip .fa {
+    color: #ef7726;
+    font-size: 1.25rem; }
+
+body .location-map {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+body .location-mapText {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  body .location-mapText .locationWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  body .location-mapText .location-address {
+    background-color: #ef7726;
+    width: 35rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: #fff; }
+  body .location-mapText .location-icon {
+    width: 40%;
+    margin-right: -3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6.5rem; }
+  body .location-mapText .location-text {
+    width: 60%;
+    padding: 1rem 10rem 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; }
+    body .location-mapText .location-text p {
+      display: inline;
+      width: 100%; }
