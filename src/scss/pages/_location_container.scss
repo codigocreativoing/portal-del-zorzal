@@ -7,10 +7,14 @@ body {
       // height: 50%;
     }
     &-mapText {
+      // background-image: url('./images/logo.png');
+      // background-repeat: no-repeat;
+      // background-position: bottom left;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       .locationWrap{
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -37,7 +41,6 @@ body {
         font-size: 6.5rem;
       }
       .location-text {
-        // background-color: aliceblue;
         width: 60%;
         padding: 1rem 10rem 1rem 0;
         display: flex;
@@ -48,7 +51,6 @@ body {
           display: inline;
           width: 100%;
         }
-        // text-align: left;
       }
     }
   }

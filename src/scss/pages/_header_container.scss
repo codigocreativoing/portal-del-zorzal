@@ -22,13 +22,24 @@ body {
         background-color: aliceblue;
         display: flex;
         justify-content: space-around;
+
         .iBox{
+          background-color: fuchsia;
           width: 50%;
           height: 25vh;
+          a{
+            text-decoration: none;
+            color: $clTextoGen;
+          }
           &-container{
             display: flex;
             justify-content: space-around;
             margin: 2rem 1rem 2rem 1rem;
+            cursor: pointer;
+            &:hover a{
+                color: $secundario;
+            }
+
             .icon{
               height: 90px;
               width: 70%;
@@ -47,14 +58,14 @@ body {
           background-image: url('./images/slide03.jpg');
           background-position: center;
           background-repeat: no-repeat;
-          background-size: 250%;
+          background-size: 100%;
           object-fit: contain;
         }
         .b02{
           background-image: url('./images/slide04.jpg');
           background-position: center;
           background-repeat: no-repeat;
-          background-size: 250%;
+          background-size: 100%;
           object-fit: contain;
         }
       }

@@ -1,0 +1,33 @@
+extends ../includes/layout
+
+append config
+  -pageTitle= "Apartamento en Barrio JJ Vargas"
+  -description="Hermoso apartamento con 2 alcobas, 2 baños, lavanderia independiente, barra en la cocina, y balcon de 1.85m2 su area privada es de 71.91m2 en el barrio jj vargas"
+
+append config
+  -sites=['./', 'index.html#inicio', 'index.html#proyectos', 'index.html#ubicacion', 'index.html#contacto']
+
+block content
+  section.infoApto
+    .boxMenu
+    .infoApto-image
+      .planos
+        img(src="./images/img03.jpg" alt="apto uno" height="400px")
+      h3 76.26 Mts²
+    .infoApto-descrip
+      .headerDescrip
+        .title "SMART HOME" tipo A
+        .logo
+          img(src="./images/logo.png", alt="logo Refugio del Zorzal" height="85px")
+      .descripGen
+        ul
+          li #[i.fa.fa-chevron-circle-right] 2 Baños
+          li #[i.fa.fa-chevron-circle-right] Balcón
+          li #[i.fa.fa-chevron-circle-right] Lavandería Independiente
+          li #[i.fa.fa-chevron-circle-right] Cocina con barra
+      .descripArea
+        ul
+          li #[i.fa.fa-chevron-circle-right] Área Balcón: 1.85 Mts²
+          li #[i.fa.fa-chevron-circle-right] Área Privada: 71.91 Mts²
+          li #[i.fa.fa-chevron-circle-right] Área Construida: 73.76 Mts²
+

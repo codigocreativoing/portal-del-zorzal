@@ -52,16 +52,18 @@
         <div class="headerM-project">
           <h1 class="titleInfo">APARTAMENTOS EN EDIFICIO INTELIGENTE <span>BOGOTÁ</span></h1>
           <div class="headerM-project--infoBox">
+            <div class="boxHover"></div>
             <div class="iBox b01">
               <div class="iBox-container">
                 <div class="icon"></div>
-                <H3 class="text">"SMART HOME" Tipo A</H3>
+                <H3 class="text"><a href="tipoa.html">"SMART HOME" Tipo A</a></H3>
               </div>
             </div>
+            <div class="boxHover"></div>
             <div class="iBox b02">
               <div class="iBox-container">
                 <div class="icon"></div>
-                <h3 class="text">"SMART HOME" Tipo B</h3>
+                <h3 class="text"><a href="tipob.html">"SMART HOME" Tipo B</a></h3>
               </div>
             </div>
           </div>
@@ -69,10 +71,18 @@
         <div class="headerM-info">
           <div class="redes"><i class="fa fa-facebook"></i><i class="fa fa-instagram"></i></div>
           <div class="patrocinadores">
-            <h4>Fiduciaria</h4>
-            <h4>Diseño</h4>
-            <h4>Construye</h4>
-            <h4>Promotor</h4>
+            <div class="imPat">
+              <h4>Fiduciria</h4><img src="./images/fiduciaria.png" alt="fiduciria" height="40px">
+            </div>
+            <div class="imPat">
+              <h4>Diseño</h4><img src="./images/diseño.png" alt="fiduciria" height="40px">
+            </div>
+            <div class="imPat">
+              <h4>Construye</h4><img src="./images/construye.png" alt="fiduciria" height="40px">
+            </div>
+            <div class="imPat">
+              <h4>Promotor</h4><img src="./images/promotor.png" alt="fiduciria" height="40px">
+            </div>
           </div>
         </div>
       </header>
@@ -133,20 +143,58 @@
       </section>
       <section class="contactContainer" id="contacto">
         <div class="contactContainer-address">
-          <h2 class="contact-title">CONTACTO:</h2>
-          <div class="contact-phones">
-            <p>300 790 6372</p>
-            <p>313 247 4228</p>
-            <p>313 817 9522</p>
-          </div>
-          <div class="url">
-            <p>WWW.REFUGIODELZORZAL.CO</p>
+          <div class="contactWrap">
+            <h3 class="contactWrap-title">CONTACTO:</h3>
+            <div class="contactWrap-phones">
+              <div class="contactWrap-icon"><i class="fa fa-phone"></i></div>
+              <div class="contactWrap-text">
+                <p>300 790 6372</p>
+                <p>313 247 4228</p>
+                <p>313 817 9522</p>
+              </div>
+            </div>
+            <div class="url">
+              <p>WWW.REFUGIODELZORZAL.CO</p>
+            </div>
           </div>
         </div>
-        <div class="contactContainer-form"></div>
+        <div class="contactContainer-form">
+          <div class="reg-form">
+            <form>
+              <section class="datos">
+                <div class="basicos">
+                  <label class="lNombre">Nombre
+                    <input class="inNombre" name="nombre" required="required"/>
+                  </label>
+                  <label class="lOrganizacion">Organización
+                    <input class="inOrganizacion" name="empresa"/>
+                  </label>
+                </div>
+                <div class="contacto">
+                  <label class="lMail">e-mail
+                    <input class="inMail" type="email" name="email" required="required"/>
+                  </label>
+                </div>
+              </section>
+              <section class="mensaje">
+                <label class="lMensaje">mensaje
+                  <textarea class="tArea" name="mensaje" id="mensaje" cols="50" rows="10" maxlength="200"></textarea>
+                </label>
+              </section>
+              <div class="buttonContainer">
+                <button>Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
-      <footer>
-        <p>prueba</p>
+      <footer class="piePagina">
+        <div class="piePagina-copyright">
+          <p class="t1">copyright &#169 2017 // Todos los derechos reservados a Refugio del Zorzal</p>
+          <p>Desarrollado por &nbsp<a href="http://www.codigocreativo.com.co" target="blanck" rel="nofollow">CreativeCode</a></p>
+          <p class="t2">Villavicencio - Meta</p>
+        </div>
+        <div class="piePagina-logoFinal"><img class="imgFinal" src="./images/logoCompleto.png" width="20%"></div>
       </footer>
     </body>
     <script src="./script.js"></script>

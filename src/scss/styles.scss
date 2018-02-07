@@ -4,8 +4,7 @@
 './utilities/functions',
 './utilities/mixins',
 './utilities/colors';
-// En esta sección se importan todas los archivos que contienen herramientas de terceros "VENDORS"
-//carpeta vendors
+
 @import
 './vendors/googlefonts.css',
 './vendors/hamburgers.css',
@@ -23,37 +22,18 @@
 './layout/_headerContainer.scss',
 './layout/_mainContainer',
 './layout/_location',
-'./layout/_contactContainer';
+'./layout/_contactContainer',
+'./layout/_grid_tipo';
 
 // carpeta components
 @import
 './components/navigation_off_canvas',
-// './components/phrase_hero',
-// './components/header_title',
-// './components/titles_pack',
-// './components/title_links',
-// './components/box_info',
-// './components/_box_info_images.scss',
-// './components/_banner_link.scss',
-// './components/_ligth_box.scss',
 './components/_galeria.scss';
-// './components/_site_info',
-// './components/_slider',
-// './components/_modal',
-// './components/_modal_historia';
 
 // carpeta pages
 @import
 './pages/_header_container',
 './pages/_main_Container',
-'./pages/_location_container';
-// './pages/hero',
-// './pages/main',
-// './pages/activities',
-// './pages/_groups.scss',
-// './pages/_contact',
-// './pages/_footer',
-// './pages/_site_info',
-// './pages/_camelot',
-// './pages/_wallace',
-// './pages/_clan';
+'./pages/_location_container',
+'./pages/_contact_container',
+'./pages/_footer';

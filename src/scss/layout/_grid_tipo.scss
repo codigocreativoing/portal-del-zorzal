@@ -1,0 +1,71 @@
+body{
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+
+  .infoApto{
+    // background-color: orangered;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 90%;
+    .boxMenu{
+      background-color: $color;
+      grid-row: 1;
+      grid-column: 1 / -1;
+    }
+    &-image{
+      // background-color: orchid;
+      grid-column: 1;
+      grid-row: 2;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      .planos{
+        width: 100%;
+        // background-color: purple;
+        display: flex;
+        justify-content: center;
+      }
+      h3{
+        margin-top: 4rem;
+        text-align: center;
+      }
+    }
+    &-descrip{
+      // background-color: palegreen;
+      grid-column: 2;
+      grid-row: 2;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      .headerDescrip{
+        // background-color: $color;
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: $secundario;
+
+      }
+      .descripGen{
+        height: 55%;
+        margin: 1rem;
+
+      }
+      .descripArea{
+        height: 30%;
+        margin: 1rem;
+      }
+      li{
+        list-style: none;
+        margin-top: 1rem;
+      }
+      .fa{
+        color: $color;
+      }
+    }
+  }
+}

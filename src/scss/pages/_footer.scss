@@ -1,5 +1,8 @@
 .piePagina{
-  background-color: $clSecondary;
+  background-color: $color;
+  a{
+    color: $clTextoGen;
+  }
   &-copyright{
     // background-color: rgb(37, 167, 207);
     @include centerFlex;

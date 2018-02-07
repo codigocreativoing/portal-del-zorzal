@@ -1,0 +1,32 @@
+extends ../includes/layout
+
+append config
+  -pageTitle= "Apartamento en el salitre"
+  -description="Hermoso apartamento con 3 alcobas, 2 baños, lavanderia independiente, barra en la cocina, y 2 balcones de 4.46m2 su area privada es de 81.11m2 junto al complejo deportivo el salitre"
+
+append config
+  -sites=['./', 'index.html#inicio', 'index.html#proyectos', 'index.html#ubicacion', 'index.html#contacto']
+
+block content
+  section.infoApto
+    .boxMenu
+    .infoApto-image
+      .planos
+        img(src="./images/img04.jpg" alt="apto uno" height="400px")
+      h3 83.61 Mts²
+    .infoApto-descrip
+      .headerDescrip
+        .title "SMART HOME" tipo B
+        .logo
+          img(src="./images/logo.png", alt="logo Refugio del Zorzal" height="85px")
+      .descripGen
+        ul
+          li #[i.fa.fa-chevron-circle-right] 2 Baños
+          li #[i.fa.fa-chevron-circle-right] 2 Balcones
+          li #[i.fa.fa-chevron-circle-right] Lavandería Independiente
+          li #[i.fa.fa-chevron-circle-right] Cocina con barra
+      .descripArea
+        ul
+          li #[i.fa.fa-chevron-circle-right] Área Balcón: 4.46 Mts²
+          li #[i.fa.fa-chevron-circle-right] Área Privada: 76.65 Mts²
+          li #[i.fa.fa-chevron-circle-right] Área Construida: 81.11 Mts²

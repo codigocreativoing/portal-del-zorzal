@@ -1,0 +1,180 @@
+body {
+  .contactContainer {
+    // background-color: blueviolet;
+    &-address {
+      // background-color: palevioletred;
+      background-image: url('./images/logo.png');
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 220px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .contactWrap{
+        // background-color: chartreuse;
+
+        text-align: center;
+
+        &-title{
+          // background-color: chocolate;
+          width: 100%;
+        }
+        &-phones{
+          // background-color: darkcyan;
+          width: 100%;
+          background-color: $color;
+          width: 35rem;
+          height: 7rem;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+          color: $clTextoGen;
+        }
+        &-icon {
+          // background-color: darkslateblue;
+          width: 40%;
+          margin-right: -3.5rem;
+        // text-align: right;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 6.5rem;
+        }
+
+        &-text {
+          // background-color: deeppink;
+          width: 60%;
+          padding: 1rem 10rem 1rem 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          p{
+            display: inline;
+            width: 100%;
+          }
+        }
+
+        .url{
+          // background-color: darkred;
+          margin-top: 2rem;
+          width: 100%;
+        }
+      }
+    }
+    &-form {
+      // background-color: #ed8555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .reg-form {
+      // background-color: green;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $clBase;
+      font-weight: bold;
+      .datos {
+        // background-color: plum;
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: column;
+        .basicos {
+          // background-color: cyan;
+          width: 100%;
+          // padding-top: 3rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .lNombre {
+            // @include lborde;
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0 1rem -2rem;
+            // margin-left: -2rem;
+            // margin-top: 1rem;
+            // margin-bottom: 1rem;
+            .inNombre {
+              background-color: #cccc;
+              margin-top: .5rem;
+              margin-left: 2rem;
+              height: 2rem;
+              width: 30rem;
+            }
+        }
+        .lOrganizacion {
+          // background-color: gray;
+          // @include lborde($color:yellowgreen);
+          display: flex;
+          flex-direction: column;
+          margin: 1rem 0 1rem -2rem;
+          // margin-top: 1rem;
+          // margin-left: -2rem;
+          .inOrganizacion {
+            background-color: #cccc;
+            margin: .5rem 0 -2rem 2rem;
+            // margin-top: .5rem;
+            // margin-left: 2rem;
+            // margin-bottom: -2rem;
+            height: 2rem;
+            width: 30rem;
+          }
+        }
+      }
+      .contacto {
+        // background-color: rosybrown;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .lMail {
+          // @include lborde($color:yellowgreen);
+          display: flex;
+          flex-direction: column;
+          margin: 1rem 0 1rem -2rem;
+          // margin-top: 1rem;
+          // margin-left: -2rem;
+        }
+        .inMail {
+          background-color: #cccc;
+          margin: .5rem 0 -2rem 2rem;
+          // margin-top: .5rem;
+          // margin-left: 2rem;
+          // margin-bottom: -2rem;
+          height: 2rem;
+          width: 30rem;
+        }
+      }
+    }
+    .mensaje {
+      // background-color: antiquewhite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .lMensaje {
+        // @include lborde($color:yellowgreen);
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 1rem -2rem;
+        // margin-top: 2rem;
+        // margin-left: -2rem;
+        // margin-bottom: 1rem;
+      }
+      .tArea {
+        background-color: #cccc;
+        margin: .5rem 0 0 2rem;
+        // margin-top: .5rem;
+        // margin-left: 2rem;
+        width: 30rem;
+        }
+    }
+    .buttonContainer {
+      // background-color: rebeccapurple;
+      @include centerFlex;
+    }
+  }
+    }
+  }
+}

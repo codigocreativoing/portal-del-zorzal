@@ -16,23 +16,38 @@ body
     .headerM-project
       h1.titleInfo APARTAMENTOS EN EDIFICIO INTELIGENTE #[span BOGOTÁ]
       .headerM-project--infoBox
+        .boxHover
         .iBox.b01
-          .iBox-container
-            .icon
-            H3.text "SMART HOME" Tipo A
+            .iBox-container
+              .icon
+              //- H3.text "SMART HOME" Tipo A
+              //-   a(href="tipoa.html"). prueba
+              H3.text
+                a(href="tipoa.html") "SMART HOME" Tipo A
+              //- <h3 class="text">SMART HOME<a href="TIPOA.html">HATHI</a></h3>
+        .boxHover
         .iBox.b02
-          .iBox-container
-            .icon
-            h3.text "SMART HOME" Tipo B
+            .iBox-container
+              .icon
+              h3.text
+                a(href="tipob.html") "SMART HOME" Tipo B
     .headerM-info
       .redes
         i.fa.fa-facebook
         i.fa.fa-instagram
       .patrocinadores
-        h4 Fiduciaria
-        h4 Diseño
-        h4 Construye
-        h4 Promotor
+        .imPat
+          h4 Fiduciria
+          img(src="./images/fiduciaria.png" alt="fiduciria" height="40px")
+        .imPat
+          h4 Diseño
+          img(src="./images/diseño.png" alt="fiduciria" height="40px")
+        .imPat
+          h4 Construye
+          img(src="./images/construye.png" alt="fiduciria" height="40px")
+        .imPat
+          h4 Promotor
+          img(src="./images/promotor.png" alt="fiduciria" height="40px")
   main.mainContainer#proyecto
     section.mainContainer-infoBox.u-firstContent
         .infoBoxWrap.iBG01
@@ -62,27 +77,40 @@ body
         li #[i.fa.fa-chevron-circle-right] Ascensor
         li #[i.fa.fa-chevron-circle-right] Excelente ubicación
   section.location#ubicacion
-      .location-map
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7953.144034337733!2d-74.0865302!3d4.6701265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b065f8400af%3A0xa0a9e6854d72cc77!2sCl.+67+%2363-65%2C+Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1517985816425" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      .location-mapText
-        .locationWrap
-          h3 UBICACIÓN
-          .location-address
-            .location-icon
-              i.fa.fa-map-marker
-            .location-text
-              p CALLE 67A # 63-65
-              p BARRIO JJ VARGAS
-              p BOGOTÁ D.C.
+    .location-map
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7953.144034337733!2d-74.0865302!3d4.6701265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b065f8400af%3A0xa0a9e6854d72cc77!2sCl.+67+%2363-65%2C+Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1517985816425" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    .location-mapText
+      .locationWrap
+        h3 UBICACIÓN
+        .location-address
+          .location-icon
+            i.fa.fa-map-marker
+          .location-text
+            p CALLE 67A # 63-65
+            p BARRIO JJ VARGAS
+            p BOGOTÁ D.C.
   section.contactContainer#contacto
     .contactContainer-address
-      h2.contact-title CONTACTO:
-      .contact-phones
-        p 300 790 6372
-        p 313 247 4228
-        p 313 817 9522
-      .url
+      .contactWrap
+        h3.contactWrap-title CONTACTO:
+        .contactWrap-phones
+          .contactWrap-icon
+            i.fa.fa-phone
+          .contactWrap-text
+            p 300 790 6372
+            p 313 247 4228
+            p 313 817 9522
+        .url
           p WWW.REFUGIODELZORZAL.CO
     .contactContainer-form
-  footer
-      p prueba
+      +form()
+      block forms
+  footer.piePagina
+    .piePagina-copyright
+      p.t1 copyright &#169 2017 // Todos los derechos reservados a #{empresa}
+      p Desarrollado por &nbsp
+        a(href="http://www.codigocreativo.com.co" target="blanck" rel="nofollow") CreativeCode
+
+      p.t2 Villavicencio - Meta
+    .piePagina-logoFinal
+      img.imgFinal(src="./images/logoCompleto.png" width="20%")
