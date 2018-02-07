@@ -12,7 +12,7 @@ include ./components/navigation_off_canvas.pug
 //- include ./components/title_links.pug
 //- include ./components/banner_link.pug
 //- include ./components/forms.pug
-//- include ./components/galeria.pug
+include ./components/galeria.pug
 //- include ./components/ligth_box.pug
 //- include ./components/box_info_op3
 //- include ./components/slider
@@ -25,7 +25,7 @@ html(lang='es')
     meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
     +metatagsWebApp()
     block metatags
-    title #{pageTitle} | #{siteTitle}
+    title #{pageTitle}
     meta(name="description" content=description)
     meta(name="application-name", content=siteTitle)
     link(rel="stylesheet", href="./styles.css")

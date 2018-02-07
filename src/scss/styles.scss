@@ -1,6 +1,3 @@
-//- TODO: este es el único archivo de scss que no inicia con "_" guión bajo y solo contiene $import y comentarios
-//- TODO: El siguiente es el orden de importar los archivos
-
 //carpeta utilities
 @import
 './utilities/variables',
@@ -30,7 +27,7 @@
 
 // carpeta components
 @import
-'./components/navigation_off_canvas';
+'./components/navigation_off_canvas',
 // './components/phrase_hero',
 // './components/header_title',
 // './components/titles_pack',
@@ -39,14 +36,15 @@
 // './components/_box_info_images.scss',
 // './components/_banner_link.scss',
 // './components/_ligth_box.scss',
-// './components/_galeria.scss',
+'./components/_galeria.scss';
 // './components/_site_info',
 // './components/_slider',
 // './components/_modal',
 // './components/_modal_historia';
 
 // carpeta pages
-// @import
+@import
+'./pages/_header_container';
 // './pages/hero',
 // './pages/main',
 // './pages/activities',

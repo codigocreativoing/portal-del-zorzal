@@ -1,52 +1,68 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Edificio Inteligente
-  body
-    header.headerM
-      section.headerM-slider
-      .headerM-project
-        h2.titleInfo APARTAMENTOS EN EDIFICIO INTELIGENTE
-        H3 "SMART HOME" Tipo A
-        h3 "SMART HOME" Tipo B
-      .headerM-info
-        h3 Fiduciaria
-        h3 Diseño
-        h3 Construye
-        h3 Promotor
-    main.mainContainer
-      section.mainContainer-info
-        p prueba
-      .mainContainer-descrip
-        h2.titleDescrip ESPACIOS SOSTENIBLES PARA SU BIENESTAR Y CONFORT
-        ul
-          li Terraza comunal BBQ
-          li Videovigilancia
-          li Bicicleteros
-          li Salón Comunal
-          li Depósitos
-          li Ascensor
-          li Excelente ubicación
-    section.location
+body
+  header.headerM#incicio
+    section.headerM-slider
+      .galery
+        +galeria([
+              ['uno', 'true'],
+              ['dos'],
+              ['tres'],
+              ['cuatro'],
+              ],
+              [['slide01.jpg', 'Un nuevo array'],
+              ['slide02.jpg', 'prueba perfecta'],
+              ['slide03.jpg', 'buena validacion'],
+              ['slide04.jpg', 'buena validacion']
+              ])
+    .headerM-project
+      h1.titleInfo APARTAMENTOS EN EDIFICIO INTELIGENTE #[span BOGOTÁ]
+      .headerM-project--infoBox
+        .iBox.b01
+          .iBox-container
+            .icon
+            H3.text "SMART HOME" Tipo A
+        .iBox.b02
+          .iBox-container
+            .icon
+            h3.text "SMART HOME" Tipo B
+    .headerM-info
+      .redes
+        i.fa.fa-facebook
+        i.fa.fa-instagram
+      .patrocinadores
+        h4 Fiduciaria
+        h4 Diseño
+        h4 Construye
+        h4 Promotor
+  main.mainContainer#proyecto
+    section.mainContainer-info
+      p prueba
+    .mainContainer-descrip
+      h2.titleDescrip ESPACIOS SOSTENIBLES PARA SU BIENESTAR Y CONFORT
+      ul
+        li Terraza comunal BBQ
+        li Videovigilancia
+        li Bicicleteros
+        li Salón Comunal
+        li Depósitos
+        li Ascensor
+        li Excelente ubicación
+  section.location#ubicacion
       .location-map
       .location-mapText
         h2 UBICACIÓN
-        .lovation-address
-          p CALLE 67A # 63-65
-          p BARRIO JJ VARGAS
-          p BOGOTÁ D.C.
-    section.contactContainer
-      .contactContainer-address
-        h2.contact-title CONTACTO:
-        .contact-phones
-          p 300 790 6372
-          p 313 247 4228
-          p 313 817 9522
-        .url
+      .lovation-address
+        p CALLE 67A # 63-65
+        p BARRIO JJ VARGAS
+        p BOGOTÁ D.C.
+  section.contactContainer#contactos
+    .contactContainer-address
+      h2.contact-title CONTACTO:
+      .contact-phones
+        p 300 790 6372
+        p 313 247 4228
+        p 313 817 9522
+      .url
           p WWW.REFUGIODELZORZAL.CO
-      .contactContainer-form
-    footer
+    .contactContainer-form
+  footer
       p prueba

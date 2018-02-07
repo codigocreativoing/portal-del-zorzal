@@ -1,0 +1,83 @@
+body {
+  .headerM {
+    background-color: #ed8500;
+    &-slider{
+      // background-color: #ed8500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-project{
+      .titleInfo{
+        background-color: rgb(237, 133, 0);
+        color: $clTextoGen;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        span{
+          font-size: 0.001rem;
+        }
+      }
+      &--infoBox{
+        background-color: aliceblue;
+        display: flex;
+        justify-content: space-around;
+        .iBox{
+          width: 50%;
+          height: 25vh;
+          &-container{
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 1rem 2rem 1rem;
+            .icon{
+              height: 90px;
+              width: 70%;
+              background-image: url('./images/icono.png');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+            .text{
+              color: $clTextoGen;
+              text-align: center;
+            }
+          }
+        }
+        .b01{
+          background-image: url('./images/slide03.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 250%;
+          object-fit: contain;
+        }
+        .b02{
+          background-image: url('./images/slide04.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 250%;
+          object-fit: contain;
+        }
+      }
+    }
+    &-info{
+      display: flex;
+      justify-content: space-between;
+      color: $clTextoGen;
+      padding: 1rem 0;
+      .redes{
+        width: 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .patrocinadores{
+        width: 90%;
+        padding: 0 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+    }
+  }
+}

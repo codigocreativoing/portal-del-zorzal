@@ -3,34 +3,24 @@ body{
   display              : grid;
   grid-template-columns: repeat(8, 1fr);
   .headerM{
+    height: 100vh;
     grid-column: 1 / -1;
     background-color: aliceblue;
-    &-slider{
-      // grid-column: 1 / -1;
-      // background-color: palevioletred;
-    }
-    &-project{
-      // grid-column: 1 / -1;
-      // background-color: orangered;
-    }
-    &-info{
-      // background-color: orchid;
-    }
   }
   .mainContainer{
-    // background-color: blue;
+    height: 100vh;
     grid-column: 1 / -1;
   }
   .location{
-    // background-color: bisque;
+    height: 100vh;
     grid-column: 1 / -1;
   }
   .contact{
-    // background-color: pink;
+    height: 100vh;
     grid-column: 1 / -1;
   }
   footer{
-    // background-color: orangered;
+    height: 50vh;
     grid-column: 1 / -1;
   }
 }

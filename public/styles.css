@@ -2442,26 +2442,38 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr); }
   body .headerM {
+    height: 100vh;
     grid-column: 1 / -1;
     background-color: aliceblue; }
   body .mainContainer {
+    height: 100vh;
     grid-column: 1 / -1; }
   body .location {
+    height: 100vh;
     grid-column: 1 / -1; }
   body .contact {
+    height: 100vh;
     grid-column: 1 / -1; }
   body footer {
+    height: 50vh;
     grid-column: 1 / -1; }
 
 body .headerM {
   display: grid;
-  grid-template-rows: 10% 40% 10% 40%; }
+  grid-template-rows: 10% 40% 15% 25% 10%;
+  grid-template-columns: 1fr 1fr; }
   body .headerM-slider {
-    grid-row: 2 / 3; }
+    grid-row: 1 / 4;
+    grid-column: 1 / 3;
+    z-index: 10; }
   body .headerM-project {
-    grid-row: 3 / 4; }
+    grid-row: 3 / 5;
+    grid-column: 1 / 3;
+    z-index: 100; }
   body .headerM-info {
-    grid-row: 4 / -1; }
+    grid-row: 5 / -1;
+    grid-column: 1 / 3;
+    z-index: 11; }
 
 body .mainContainer {
   display: grid;
@@ -2505,9 +2517,9 @@ body footer {
   width: 100%;
   height: 4rem;
   transition: all .3s ease-out;
-  background-color: rgba(96, 37, 155, 0.3); }
+  background-color: rgba(237, 133, 0, 0); }
   .Header.is-active {
-    background-color: #60259b; }
+    background-color: #ed8500; }
   .Header-container {
     margin: auto;
     max-width: 1200px;
@@ -2537,7 +2549,7 @@ body footer {
   width: 100%;
   overflow-y: auto;
   grid-area: panel;
-  background-color: #60259b;
+  background-color: #ed8500;
   transition: transform .3s ease-out;
   transform: translateX(-110%); }
   .Panel.is-active {
@@ -2593,3 +2605,94 @@ body footer {
     .Menu-link:hover {
       border-top: medium solid #b8d640;
       background-color: transparent; } }
+
+.galery {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  .galery-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s; }
+  .galery-input[type=radio] {
+    position: relative;
+    bottom: -75%;
+    z-index: 100; }
+  .galery input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1; }
+  .galery input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1; }
+  .galery input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1; }
+  .galery input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1; }
+
+body .headerM {
+  background-color: #ed8500; }
+  body .headerM-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  body .headerM-project .titleInfo {
+    background-color: #ed8500;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    body .headerM-project .titleInfo span {
+      font-size: 0.001rem; }
+  body .headerM-project--infoBox {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around; }
+    body .headerM-project--infoBox .iBox {
+      width: 50%;
+      height: 25vh; }
+      body .headerM-project--infoBox .iBox-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 1rem 2rem 1rem; }
+        body .headerM-project--infoBox .iBox-container .icon {
+          height: 90px;
+          width: 70%;
+          background-image: url("./images/icono.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain; }
+        body .headerM-project--infoBox .iBox-container .text {
+          color: #fff;
+          text-align: center; }
+    body .headerM-project--infoBox .b01 {
+      background-image: url("./images/slide03.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 250%;
+      object-fit: contain; }
+    body .headerM-project--infoBox .b02 {
+      background-image: url("./images/slide04.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 250%;
+      object-fit: contain; }
+  body .headerM-info {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1rem 0; }
+    body .headerM-info .redes {
+      width: 10%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+    body .headerM-info .patrocinadores {
+      width: 90%;
+      padding: 0 8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
