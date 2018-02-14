@@ -5,10 +5,20 @@ body{
   .headerM{
     height: 100vh;
     grid-column: 1 / -1;
-    background-color: aliceblue;
+    // background-color: blue;
+    // display: grid;
+    // grid-template-rows: 60% 40%;
+    // justify-content: center;
+    // align-items: center;
+    //   &-slider{
+    //     grid-row: 1 / 2;
+    //   }
+    //   &-project{
+    //     grid-row: 2 / 3;
+    //   }
   }
   .mainContainer{
-    height: 100vh;
+    height: 200vh;
     grid-column: 1 / -1;
   }
   .location{

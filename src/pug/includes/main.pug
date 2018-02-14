@@ -10,7 +10,7 @@ body
               ],
               [['slide01.jpg', 'Un nuevo array'],
               ['slide02.jpg', 'prueba perfecta'],
-              ['slide03.jpg', 'buena validacion'],
+              ['slide05.jpg', 'buena validacion'],
               ['slide04.jpg', 'buena validacion']
               ])
     .headerM-project
@@ -23,22 +23,56 @@ body
               //- H3.text "SMART HOME" Tipo A
               //-   a(href="tipoa.html"). prueba
               H3.text
-                a(href="tipoa.html") "SMART HOME" Tipo A
+                a(href="tipoa.html") "APARTAMENTO" Tipo A
               //- <h3 class="text">SMART HOME<a href="TIPOA.html">HATHI</a></h3>
         .boxHover
         .iBox.b02
             .iBox-container
               .icon
               h3.text
-                a(href="tipob.html") "SMART HOME" Tipo B
-    .headerM-info
-      .redes
-        i.fa.fa-facebook
-        i.fa.fa-instagram
+                a(href="tipob.html") "APARTAMENTO" Tipo B
+
+  main.mainContainer#proyecto
+    section.mainContainer-infoBox
+        .infoBoxWrap.iBG01
+          .image
+          .content
+            h3.titleInfoBox CÓMODAS HABITACIONES
+        .infoBoxWrap.iBG02
+          .image
+          .content
+            h3.titleInfoBox AMPLIOS ESPACIOS
+        .infoBoxWrap.iBG03
+          .image
+          .content
+            h3.titleInfoBox ELEMENTOS ÚNICOS.
+    .mainContainer-descrip
+      h3.titleDescrip ESPACIOS SOSTENIBLES PARA SU BIENESTAR Y CONFORT
+      .descripciones
+        ul.listDescrip.u01
+          li #[i.fa.fa-chevron-circle-right] Terraza comunal BBQ
+          li #[i.fa.fa-chevron-circle-right] Videovigilancia
+          li #[i.fa.fa-chevron-circle-right] Bicicleteros
+          li #[i.fa.fa-chevron-circle-right] Salón Comunal
+        ul.listDescrip.u02
+          li #[i.fa.fa-chevron-circle-right] Depósitos
+          li #[i.fa.fa-chevron-circle-right] Ascensor
+          li #[i.fa.fa-chevron-circle-right] Excelente ubicación
+    .mainContainer-video
+      .mainContainer-titulo
+        h2 Recorrido Virtual
+      .mainContainer-recurso
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/21hmTVEnl3w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    .mainContainer-info
+      .vigilado
+        img(src="./images/vigilado.png" alt="Vigilado" height="170px")
       .patrocinadores
-        .imPat
-          h4 Fiduciria
-          img(src="./images/fiduciaria.png" alt="fiduciria" height="40px")
+        .imPat.i01
+          .fiduciaria
+            h4 Fiduciria
+            img(src="./images/fiduciaria.png" alt="fiduciria" height="60px")
+          .aviso
+            img(src="./images/anuncio.png" alt="anuncio" height="70px")
         .imPat
           h4 Diseño
           img(src="./images/diseño.png" alt="fiduciria" height="40px")
@@ -48,34 +82,6 @@ body
         .imPat
           h4 Promotor
           img(src="./images/promotor.png" alt="fiduciria" height="40px")
-  main.mainContainer#proyecto
-    section.mainContainer-infoBox.u-firstContent
-        .infoBoxWrap.iBG01
-          .image
-          .content
-            h4.titleInfoBox CÓMODAS HABITACIONES
-            p Es un hecho bien establecido que un lector se distraerá del contenido legible de una página cuando mire su diseño.
-        .infoBoxWrap.iBG02
-          .image
-          .content
-            h4.titleInfoBox ELEMENTOS ÚNICOS
-            p Espacios cuidadosamente diseñados, con caracteristicas equilibradas entre diseño y utilidad.
-        .infoBoxWrap.iBG03
-          .image
-          .content
-            h4.titleInfoBox ELEMENTOS ÚNICOS
-            p Áreas justas, teniendo en cuenta de ofrecer calidad de vida.
-    .mainContainer-descrip
-      h2.titleDescrip ESPACIOS SOSTENIBLES PARA SU BIENESTAR Y CONFORT
-      ul.listDescrip.u01
-        li #[i.fa.fa-chevron-circle-right] Terraza comunal BBQ
-        li #[i.fa.fa-chevron-circle-right] Videovigilancia
-        li #[i.fa.fa-chevron-circle-right] Bicicleteros
-        li #[i.fa.fa-chevron-circle-right] Salón Comunal
-      ul.listDescrip.u02
-        li #[i.fa.fa-chevron-circle-right] Depósitos
-        li #[i.fa.fa-chevron-circle-right] Ascensor
-        li #[i.fa.fa-chevron-circle-right] Excelente ubicación
   section.location#ubicacion
     .location-map
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7953.144034337733!2d-74.0865302!3d4.6701265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b065f8400af%3A0xa0a9e6854d72cc77!2sCl.+67+%2363-65%2C+Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1517985816425" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

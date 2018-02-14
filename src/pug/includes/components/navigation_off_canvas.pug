@@ -16,4 +16,7 @@ mixin navigationOffCanvas(menu)
           ul.Menu-listItem
             each item in menu
               li.Menu-item
-                a.Menu-link(href=`${item[1]}`)= item[0]
+                .clipContainer
+                  .clipInterno
+                    .clipAnim
+                      a.Menu-link(href=`${item[1]}`)= item[0]

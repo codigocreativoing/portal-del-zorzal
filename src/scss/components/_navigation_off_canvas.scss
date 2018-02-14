@@ -1,13 +1,13 @@
-$header-bg-op-0: rgba(237, 133, 0, 0 );
+$header-bg-op-0: rgba(237, 133, 0, 1 );
 $header-bg-op-1: rgba(237, 133, 0, 1);
 $header-color: $clResalte;
 $header-height: 4rem;
 $header-container-width: 1200px;
 
-$logo-url: '';
-$logo-width: 4rem;
+$logo-url: './images/logoZorzal.png';
+$logo-width: 13rem;
 $logo-height: 4rem;
-$logo-bg-size: 2.5rem;
+$logo-bg-size: 13rem;
 
 $header-area: '. logo hamburger'; // 'logo . hamburger' | '. logo hamburger' | 'hamburger . logo' | 'hamburger logo .'
 $logo-position: start; //start | center | end
@@ -49,6 +49,7 @@ $hamburger-color: $clTextoGen;
   height: $header-height;
   transition: all .3s ease-out;
   background-color: $header-bg-op-0;
+  border-bottom: 2px solid $clTextoGen;
 
   &.is-active { background-color: $header-bg-op-1; }
 
@@ -76,6 +77,7 @@ $hamburger-color: $clTextoGen;
     width: $logo-width;
     height: $logo-height;
     text-indent: -9999px;
+    border-radius: 1px solid red;
     background: {
       image: url($logo-url);
       size: $logo-bg-size;
@@ -115,7 +117,7 @@ $hamburger-color: $clTextoGen;
 
   &-link {
     display: block;
-    padding: 1rem;
+    padding: 1rem 0;
     font: {
       weight: $medium;
       size: 1.5rem;
@@ -158,18 +160,50 @@ $hamburger-color: $clTextoGen;
 
   .Menu {
     margin-top: 0;
-
+    &-item{
+      // background-color: red;
+    }
     &-listItem {
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
     }
+    .clipContainer{
+      width: 13rem;
+      // height: 4.1rem;
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      background-color: $clTextoGen;
+      margin-left: -3.45rem;
+      display: flex;
+      justify-content: center;
+    }
+    .clipInterno{
+      width: 12.5rem;
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      background-color: $color;
+      height: 3.9rem;
+    }
 
-    &-link { border-top: medium solid transparent; }
-
-    &-link:hover {
+    .clipAnim{
+      // clip-path: polygon(25% 0%, 100% 0%, 100% 0, 25% 0);
+      background-color: $clTextoGen;
+      height: .1rem;
+      transition: all .5s ease-in-out;
+      // margin-top: -6rem;
+    }
+    // .clipAnim:hover{
+    //     clip-path: polygon(25% 0%, 100% 0%, 100% 0, 25% 0);
+    //     animation: aniClipPath 2s infinite;
+    //   }
+    &-link:hover{
       border-top: medium solid $header-color;
-      background-color: transparent;
+      transition: all .5s ease-in-out;
+      height: 4.2rem;
+      // .clipAnim{
+        // clip-path: polygon(25% 0%, 100% 0%, 100% 0, 25% 0);
+        // animation: aniClipPath 2s infinite;
+      // }
+
     }
   }
 }
