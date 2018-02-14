@@ -7,7 +7,7 @@
 
 @import
 './vendors/googlefonts.css',
-'./vendors/hamburgers.css',
+'./vendors/hamburgers',
 './vendors/font-awesome';
 
 // carpeta base
@@ -27,7 +27,8 @@
 
 // carpeta components
 @import
-'./components/navigation_off_canvas',
+'./components/_navigation_off_canvas',
+'./components/_youtube_video',
 './components/_galeria.scss';
 
 // carpeta pages

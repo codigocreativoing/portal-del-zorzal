@@ -19,4 +19,11 @@
     // background-color: rgb(10, 94, 133);
     @include centerFlex;
   }
+  span{
+    color: $clResalte;
+    font-weight: $medium;
+    &:hover{
+      color: $secundario;
+    }
+  }
 }

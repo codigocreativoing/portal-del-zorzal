@@ -13,6 +13,8 @@ include ./components/navigation_off_canvas.pug
 //- include ./components/banner_link.pug
 include ./components/forms.pug
 include ./components/galeria.pug
+include ./components/youtube_video.pug
+
 //- include ./components/ligth_box.pug
 //- include ./components/box_info_op3
 //- include ./components/slider
@@ -31,10 +33,10 @@ html(lang='es')
     link(rel="stylesheet", href="./styles.css")
   body
     +navigationOffCanvas([
-      [pages[0], sites[0]],
-      [pages[1], sites[1]],
-      [pages[2], sites[2]],
-      [pages[3], sites[3]]
+      [pages[0], sites[0], "-home"],
+      [pages[1], sites[1], "-briefcase"],
+      [pages[2], sites[2], "-map-marker"],
+      [pages[3], sites[3], "-envelope"]
     ] )
     //- +links([
     //-   [services[0], serviceSites[0], "images/"+servicesImg[0]],

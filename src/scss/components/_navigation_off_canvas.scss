@@ -199,6 +199,7 @@ $hamburger-color: $clTextoGen;
       border-top: medium solid $header-color;
       transition: all .5s ease-in-out;
       height: 4.2rem;
+      background-color: $hamburger-color;
       // .clipAnim{
         // clip-path: polygon(25% 0%, 100% 0%, 100% 0, 25% 0);
         // animation: aniClipPath 2s infinite;

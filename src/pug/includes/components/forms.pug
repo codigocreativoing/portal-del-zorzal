@@ -1,6 +1,6 @@
 mixin form()
   .reg-form
-    form
+    form(action="https://formspree.io/informacion@refugiodelzorzal.co" method="POST")
       section.datos
         .basicos
           label.lNombre Nombre
@@ -14,4 +14,4 @@ mixin form()
         label.lMensaje mensaje
           textarea.tArea(name="mensaje" id="mensaje" cols="50" rows="10" maxlength=200)
       .buttonContainer
-        button Enviar
+        button(type="submit" class="btn") Enviar
