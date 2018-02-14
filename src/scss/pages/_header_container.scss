@@ -7,6 +7,9 @@ body {
       justify-content: center;
       align-items: center;
       padding: 2rem 0;
+      .imgSlider{
+        display: none;
+      }
     }
     &-project{
       background-color: $color;
@@ -75,6 +78,109 @@ body {
         }
       }
     }
+  }
+}
+@media screen and (max-width: 620px){
 
+}
+
+// =============== media escritorio tv 1480
+@include mQ(flS){
+  body{
+    background-color: brown;
+  }
+}
+
+
+// =============== media escritorio tv hasta 1360
+@include mQ(opS){
+  body{
+    background-color: lawngreen;
+  }
+}
+
+
+// =============== media escritorio tv hasta 1200
+@include mQ(xlS){
+  body{
+    background-color: fuchsia;
+  }
+}
+
+// =============== media escritorio portatil hasta 990
+@include mQ(largeS){
+  body{
+    background-color: red;
+  }
+}
+
+// =============== media escritorio normal hasta 760
+@include mQ(wideS){
+  body {
+    .headerM {
+      &-slider{
+        padding: 0;
+      }
+      &-project{
+        .titleInfo{
+          margin-top: -4rem;
+          padding: 0;
+        }
+        &--infoBox{
+          background-color: $color;
+          display: flex;
+          justify-content: space-around;
+          margin-top: 0;
+          .iBox{
+            // background-color: fuchsia;
+            width: 50%;
+            height: 35vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+// =============== media escritorio pequeño hasta 480
+@include mQ(mediumS){
+  body {
+    .headerM {
+      &-slider{
+        .imgSlider{
+          display: block;
+          // margin: -4rem 0 0 13rem;
+          margin: -4.5rem 0 0 0;
+        }
+      }
+      &-project{
+        .titleInfo{
+          margin-top: -4.5rem;
+          padding: 0;
+        }
+        &--infoBox{
+          background-color: $color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 0;
+          .iBox{
+            width: 90%;
+            height: 35vh;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============== media escritorio tablets hasta 320
+@include mQ(smallS){
+  body{
+    background-color: blue;
   }
 }

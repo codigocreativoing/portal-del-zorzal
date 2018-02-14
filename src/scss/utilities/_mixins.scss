@@ -38,3 +38,67 @@
 	background-color: $from;
 }
 
+@mixin mQ($media) {
+  @if $media==xsS {
+    @media screen and (max-width:$xsScreen) {
+      @content;
+    }
+  }
+  @if $media==smallS {
+    @media screen and (max-width:$smallScreen) {
+      @content;
+    }
+  }
+  @if $media==mediumS {
+    @media screen and (max-width:$mediumScreen) {
+      @content;
+    }
+  }
+  @if $media==wideS {
+    @media screen and (max-width:$wideScreen) {
+      @content;
+    }
+  }
+  @if $media==largeS {
+    @media screen and (max-width:$largeScreen) {
+      @content;
+    }
+  }
+  @if $media==xlS {
+    @media screen and (max-width:$xlScreen) {
+      @content;
+    }
+  }
+  @if $media==opS {
+    @media screen and (max-width:$opScreen) {
+      @content;
+    }
+  }
+  @if $media==flS {
+    @media screen and (max-width:$fullScreen) {
+      @content;
+    }
+  }
+}
+// @mixin mediaS($consulta) {
+//   $xsScreen    : 320px; //iphone retina
+//   $smallScreen : 480px; //telefonos
+//   $mediumScreen: 760px; //tablets
+//   $wideScreen  : 990px; //escritorio - pequeño
+//   $largeScreen : 1200px; //escritorio normal
+//   $xlScreen    : 1360px;  //escritorio portatil
+//   $opScreen    : 1480px; //tv fullHD
+
+//   @if $consulta==xxs {
+//     @media #{$xsScreen} {
+//       @content;
+//     }
+//   }
+//   @if $consulta==sS {
+//     @media #{smallScreen} {
+//       @content;
+//     }
+//   }
+// }
+
+

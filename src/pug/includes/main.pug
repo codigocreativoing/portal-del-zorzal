@@ -13,16 +13,22 @@ body
               ['slide05.jpg', 'buena validacion'],
               ['slide04.jpg', 'buena validacion']
               ])
+      .imgSlider
+        //- img(src="./images/slide01.jpg" alt="imagen publicitaria" srcset="./images/slide250.jpg 50w")
+        //- picture
+        //-   source(media="(max-width:400px)", srcset="./images/slide250.jpg")
+        //-   source(media="(max-width:320px)", srcset="./images/slide250.jpg")
+        img(src="./images/slide250.jpg", alt="imagen publicitaria" height="250")
     .headerM-project
       h1.titleInfo APARTAMENTOS EN EDIFICIO INTELIGENTE #[span BOGOTÁ]
       .headerM-project--infoBox
-        .boxHover
+        //- .boxHover
         .iBox.b01
             .iBox-container
               .icon
               H3.text
                 a(href="tipoa.html") "APARTAMENTO" Tipo A
-        .boxHover
+        //- .boxHover
         .iBox.b02
             .iBox-container
               .icon

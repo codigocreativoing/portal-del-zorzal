@@ -33,3 +33,22 @@ $secundario:#cccc33;
 $resalte: #666666;
 $resalte2: rgb(184, 214, 64);
 $clAlterno: #cCcc;
+
+// variables de media query
+// $xsScreen    : 320px; //iphone retina
+// $smallScreen : 400px; //telefonos 480
+// $mediumScreen: 700px; //tablets 760
+// $wideScreen  : 990px; //escritorio - pequeño
+// $largeScreen : 1200px; //escritorio normal
+// $xlScreen    : 1360px;  //escritorio portatil
+// $opScreen    : 1480px; //tv fullHD
+
+// variables de media query
+$xsScreen    : 320px; //iphone retina
+$smallScreen : 320px; //telefonos 480
+$mediumScreen: 440px; //tablets 760
+$wideScreen  : 760px; //escritorio - pequeño
+$largeScreen : 990px; //escritorio normal
+$xlScreen    : 1200px;  //escritorio portatil
+$opScreen    : 1360px; //tv fullHD
+$fullScreen  : 1480px;
