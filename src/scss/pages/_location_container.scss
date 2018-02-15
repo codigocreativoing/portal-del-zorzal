@@ -55,3 +55,58 @@ body {
     }
   }
 }
+
+// =============== media escritorio tv 1480
+@include mQ(flS){
+  body{
+    // background-color: brown;
+  }
+}
+
+
+// =============== media escritorio tv hasta 1360
+@include mQ(opS){
+  body{
+    // background-color: lawngreen;
+  }
+}
+
+
+// =============== media escritorio tv hasta 1200
+@include mQ(xlS){
+
+}
+
+// =============== media escritorio portatil hasta 990
+@include mQ(largeS){
+
+}
+
+// =============== media escritorio normal hasta 760
+@include mQ(wideS){
+
+}
+
+// =============== media escritorio pequeño hasta 760
+@include mQ(mediumS){
+
+}
+
+// =============== media escritorio tablets hasta 480
+@include mQ(smallS){
+
+}
+
+// =============== media escritorio pequeño hasta 320
+@include mQ(mediumS){
+  body{
+    // background-color: yellow;
+  }
+}
+
+// =============== media escritorio telefonos menores de 320
+@include mQ(xsS){
+  body{
+    // background-color: green;
+  }
+}

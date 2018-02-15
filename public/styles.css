@@ -3895,13 +3895,18 @@ body .headerM-project {
     display: flex;
     justify-content: center; }
   .mainContainer-info {
+    background-color: grey;
     padding: .5rem 0; }
     .mainContainer-info .patrocinadores {
       width: 100%; }
     .mainContainer-info .imPat {
       margin: 0;
       width: 50%;
-      height: auto; }
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
       .mainContainer-info .imPat h4 {
         text-align: center;
         margin-bottom: .5rem;
