@@ -10,7 +10,7 @@ $logo-height: 4rem;
 $logo-bg-size: 13rem;
 
 $header-area: '. logo hamburger'; // 'logo . hamburger' | '. logo hamburger' | 'hamburger . logo' | 'hamburger logo .'
-$logo-position: start; //start | center | end
+$logo-position: center; //start | center | end
 $hamburger-position: end; //start | end
 
 $hamburger-color: $clTextoGen;
@@ -68,22 +68,23 @@ $hamburger-color: $clTextoGen;
 
 .Logo {
   // background-color: red;
-  z-index: 10001;
+  z-index: 10100;
   grid-area: logo;
   justify-self: $logo-position;
 
   &-link {
     display: block;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     width: $logo-width;
     height: $logo-height;
-    text-indent: -9999px;
-    border-radius: 1px solid red;
-    background: {
-      image: url($logo-url);
-      size: $logo-bg-size;
-      repeat: no-repeat;
-      position: center;
-    }
+    // text-indent: -9999px;
+    // border-radius: 1px solid red;
+    background-image: url('./images/LogoZorzal.svg');
+    // background-size: $logo-bg-size;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -100,7 +101,7 @@ $hamburger-color: $clTextoGen;
   @include panel-direction(left);
 
   &-button {
-    z-index: 999;
+    z-index: 10001;
     grid-area: hamburger;
     justify-self: $hamburger-position;
   }

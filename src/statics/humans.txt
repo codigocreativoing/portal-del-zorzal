@@ -1,14 +1,37 @@
-/* Andrés Gómez - Ingeniero de Sistemas & Front-End developer - http://andresgomez.com */
+/* Andrés Gómez - Ingeniero de Sistemas & Front-End developer - http://andresgomezing.com */
+/* Creative CODE - WEB Studio */
+/* www.codigocreativo.co */
 
 /* TEAM */
-	Design and Programming: Andrés Gómez
-	Contact: andresg2409 [at] gmail.com
-	Twitter: @andresChes
+	Design and Programming: Creative Code
+	Contact: desarrollo [at] codigocreativo.com.co
+	Twitter: @creativecodeing
 	From: Villavicencio, Colombia
 
+  the boss: Andrés Gómez
+  contact: andresgomez [at] codigocreativo.com.co
+  Twitter: @andresChes
+  From: Villavicencio, Colombia
+
+  the designer: Jorge Franco
+  contact: jorgefranco [at] codigocreativo.com.co
+  Twitter: @jfrancor03
+  From: Villavicencio, Colombia
+
+  the SEO: Sebastían Gómez
+  contact: sebastiangomez [at] codigocreativo.com.co
+  From: Villavicencio, Colombia
+
+  the marketing: Xiomara Pineda
+  contact: xiomarapineda [at] codigocreativo.com.co
+  From: Villavicencio, Colombia
+
+/* THANKS */
+  Dios Padre Todo Poderoso (nuestro guía)
+
 /* SITE */
-	Last update: 2017/21/06
+	Last update: 2018/15/02
 	Language: Español
 	Standars: HTML5, CSS3, JavaScript, Node.js, NPM
 	Components: animate.css, font-awesome, jquery, owl.carousel, wowjs, babel-preset-es2015, browser-sync, gulp, gulp-autoprefixer, gulp-babel, gulp-clean-css, gulp-concat, gulp-htmlmin, gulp-imagemin, gulp-pug, gulp-sass, gulp-svgmin, gulp-uglify, gulp-uncss, gulp-useref, gulp-webp, imagemin-pngquant, onchange, parallelshell
-Software: Atom, visual studio code, Chrome, firefox, Windows 10
+  Software: Illustrator, XD, Atom, VisualStudio Code, Chrome, firefox, Windows 10, filezilla

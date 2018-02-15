@@ -3510,17 +3510,14 @@ body {
     grid-template-areas: ". logo hamburger" "panel panel panel"; }
 
 .Logo {
-  z-index: 10001;
+  z-index: 10100;
   grid-area: logo;
-  justify-self: start; }
+  justify-self: center; }
   .Logo-link {
     display: block;
     width: 13rem;
     height: 4rem;
-    text-indent: -9999px;
-    border-radius: 1px solid red;
-    background-image: url("./images/logoZorzal.png");
-    background-size: 13rem;
+    background-image: url("./images/LogoZorzal.svg");
     background-repeat: no-repeat;
     background-position: center; }
 
@@ -3537,7 +3534,7 @@ body {
   .Panel.is-active {
     transform: translateX(0); }
   .Panel-button {
-    z-index: 999;
+    z-index: 10001;
     grid-area: hamburger;
     justify-self: end; }
 
@@ -3604,44 +3601,6 @@ body {
       height: 4.2rem;
       background-color: #fff; } }
 
-/**
-*   @fileoverview
-*     Componente para incrustar un video de YouTube en nuestro sitio web cuando la resolución es mayor a 64em (1024px), cuando es menor se agrega un enlace al video
-*     Dependencias: font-awesome
-*
-*   @param {String} id, id del video de YouTube, se define en el archivo pug
-*   @param {String} $video-width, anchura del contenedor del video, se define en el archivo scss
-*
-*   @returns {void} no retorna nada
-*
-*   @author Jonathan MirCha <jonmircha@gmail.com>
-*   @version 1.0.0
-*/
-.Youtube {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: auto; }
-  .Youtube-wrapper {
-    position: relative;
-    height: auto; }
-    @media screen and (min-width: 64em) {
-      .Youtube-wrapper {
-        padding-bottom: 56.25%;
-        /* 16:9 */ } }
-  .Youtube iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  .Youtube a {
-    display: block;
-    margin: 2rem auto;
-    text-align: center;
-    text-decoration: none;
-    font-size: 3.5vw; }
-
 .galery {
   width: 100%;
   height: 400px;
@@ -3681,6 +3640,42 @@ body {
 @media screen and (max-width: 580px) {
   .galery {
     display: none; } }
+
+.social {
+  position: fixed;
+  top: 25%;
+  left: 0;
+  z-index: 10100; }
+  .social-list {
+    list-style: none; }
+    .social-list__item:hover .fa {
+      padding: 3rem 1.5rem;
+      background-color: #cccc33;
+      transform-origin: left;
+      border-radius: 0 30% 30% 0;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6); }
+    .social-list__link {
+      display: inline-block;
+      color: #fff;
+      font-size: 1.5rem; }
+      .social-list__link .fa {
+        padding: 3rem 1rem;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color .5s .3s linear, border-radius .3s ease-in-out, padding .4s ease-in-out, box-shadow .3s linear; }
+      .social-list__link .fa-facebook-square {
+        background-color: #3b5998;
+        border-radius: 0 30% 0 0; }
+      .social-list__link .fa-twitter-square {
+        background-color: #00abf0; }
+      .social-list__link .fa-instagram {
+        background-color: #cd486b; }
+      .social-list__link .fa-pinterest-square {
+        background-color: #ae181f;
+        border-radius: 0 0 30% 0; }
 
 body .headerM-slider {
   display: flex;

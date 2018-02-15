@@ -13,8 +13,9 @@ include ./components/navigation_off_canvas.pug
 //- include ./components/banner_link.pug
 include ./components/forms.pug
 include ./components/galeria.pug
-include ./components/youtube_video.pug
+include ./components/menu_sociales.pug
 
+//- include ./components/youtube_video
 //- include ./components/ligth_box.pug
 //- include ./components/box_info_op3
 //- include ./components/slider
@@ -38,11 +39,8 @@ html(lang='es')
       [pages[2], sites[2], "-map-marker"],
       [pages[3], sites[3], "-envelope"]
     ] )
-    //- +links([
-    //-   [services[0], serviceSites[0], "images/"+servicesImg[0]],
-    //-   [services[1], serviceSites[1], servicesImg[1]],
-    //-   [services[2], serviceSites[2], servicesImg[2]],
-    //-   [services[3], serviceSites[3], servicesImg[3]],
-    //- ])
+    +social([
+      ['https://www.instagram.com/refugiodelzorzal/?hl=es-la', 'instagram']
+    ])
     block content
     script(src="./script.js")

@@ -8,17 +8,13 @@ body
               ['tres'],
               ['cuatro'],
               ],
-              [['slide01.jpg', 'Un nuevo array'],
-              ['slide02.jpg', 'prueba perfecta'],
-              ['slide05.jpg', 'buena validacion'],
-              ['slide04.jpg', 'buena validacion']
+              [['slide01.jpg', 'Vista Principal'],
+              ['slide02.jpg', 'Vista interna'],
+              ['slide05.jpg', 'Vista interna'],
+              ['slide04.jpg', 'Vista interna']
               ])
       .imgSlider
-        //- img(src="./images/slide01.jpg" alt="imagen publicitaria" srcset="./images/slide250.jpg 50w")
-        //- picture
-        //-   source(media="(max-width:400px)", srcset="./images/slide250.jpg")
-        //-   source(media="(max-width:320px)", srcset="./images/slide250.jpg")
-        img(src="./images/slide250.jpg", alt="imagen publicitaria" height="250")
+        img(src="./images/Slide250.jpg", alt="imagen publicitaria" height="250")
     .headerM-project
       h1.titleInfo APARTAMENTOS EN EDIFICIO INTELIGENTE #[span BOGOTÁ]
       .headerM-project--infoBox
@@ -69,6 +65,7 @@ body
         h2 Recorrido Virtual
       .mainContainer-recurso
         .video
+          //- +youtubeVideo("21hmTVEnl3w")
           <iframe width="560" height="315" src="https://www.youtube.com/embed/21hmTVEnl3w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     .mainContainer-info
       .patrocinadores
@@ -95,7 +92,7 @@ body
           .location-text
             p CALLE 67A # 63-65
             p BARRIO JJ VARGAS
-            p BOGOTÁ D.C.
+            p BOGOTÁ D.C
   section.contactContainer#contacto
     .contactContainer-address
       .contactWrap
