@@ -1,20 +1,24 @@
 body {
   .location {
     &-map {
+      // background-color: lightcoral;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      // height: 50%;
+        iframe{
+          width: 90%;
+          height: 80%;
+        }
     }
     &-mapText {
-      // background-image: url('./images/logo.png');
-      // background-repeat: no-repeat;
-      // background-position: bottom left;
+      // background-color: crimson;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       .locationWrap{
-
+        // background-color: darkcyan;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,35 +26,32 @@ body {
       }
       .location-address{
         background-color: $color;
-        width: 35rem;
+        width: 100%;
         height: 7rem;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-content: center;
         text-align: center;
         color: $clTextoGen;
       }
       .location-icon {
         // background-color: red;
-        width: 40%;
-        margin-right: -3.5rem;
+        width: 15%;
+        padding-left: 1rem;
         // text-align: right;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 6.5rem;
+        font-size: 5.5rem;
       }
       .location-text {
-        width: 60%;
-        padding: 1rem 10rem 1rem 0;
+        // background-color: darkmagenta;
+        width: 85%;
+        padding: 1rem 0 1rem 2rem;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        p{
-          display: inline;
-          // width: 100%;
-        }
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
       }
     }
   }
@@ -74,27 +75,53 @@ body {
 
 // =============== media escritorio tv hasta 1200
 @include mQ(xlS){
-
+  body{
+    // background-color: red;
+  }
 }
 
 // =============== media escritorio portatil hasta 990
 @include mQ(largeS){
-
+  body {
+    // background-color: darkslateblue;
+    .location {
+      &-map {
+          iframe{
+            width: 90%;
+            height: 70%;
+          }
+      }
+    }
+  }
 }
 
 // =============== media escritorio normal hasta 760
 @include mQ(wideS){
-
+  body {
+    // background-color: olive;
+    .location {
+      &-map {
+          iframe{
+            width: 90%;
+            height: 60%;
+          }
+      }
+    }
+  }
 }
 
 // =============== media escritorio pequeño hasta 760
 @include mQ(mediumS){
-
+  body{
+    // background-color: hotpink;
+  }
 }
 
 // =============== media escritorio tablets hasta 480
 @include mQ(smallS){
-
+  body{
+    // background-color: indigo;
+  }
 }
 
 // =============== media escritorio pequeño hasta 320

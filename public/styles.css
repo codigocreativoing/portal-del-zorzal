@@ -3287,6 +3287,18 @@ body .location {
     grid-column: 2;
     grid-row: 2; }
 
+@media screen and (max-width: 580px) {
+  body .location {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 70% 20%; }
+    body .location-map {
+      grid-column: 1;
+      grid-row: 2 / 3; }
+    body .location-mapText {
+      grid-column: 1;
+      grid-row: 3 / -1; } }
+
 body .contactContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3736,7 +3748,11 @@ body .headerM-project {
     flex-wrap: wrap; }
   .mainContainer-info .imPat {
     margin: 0;
-    width: 20%; }
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
     .mainContainer-info .imPat h4 {
       text-align: center;
       margin-bottom: .5rem;
@@ -3902,55 +3918,64 @@ body .headerM-project {
     .mainContainer-info .imPat {
       margin: 0;
       width: 50%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; }
+      height: auto; }
       .mainContainer-info .imPat h4 {
         text-align: center;
         margin-bottom: .5rem;
         color: #fff; } }
 
 body .location-map {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
+  body .location-map iframe {
+    width: 90%;
+    height: 80%; }
 
 body .location-mapText {
   display: flex;
   justify-content: flex-end;
   align-items: center; }
   body .location-mapText .locationWrap {
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   body .location-mapText .location-address {
     background-color: #ed8500;
-    width: 35rem;
+    width: 100%;
     height: 7rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     text-align: center;
     color: #fff; }
   body .location-mapText .location-icon {
-    width: 40%;
-    margin-right: -3.5rem;
+    width: 15%;
+    padding-left: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6.5rem; }
+    font-size: 5.5rem; }
   body .location-mapText .location-text {
-    width: 60%;
-    padding: 1rem 10rem 1rem 0;
+    width: 85%;
+    padding: 1rem 0 1rem 2rem;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap; }
-    body .location-mapText .location-text p {
-      display: inline; }
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; }
+
+@media screen and (max-width: 990px) {
+  body .location-map iframe {
+    width: 90%;
+    height: 70%; } }
+
+@media screen and (max-width: 780px) {
+  body .location-map iframe {
+    width: 90%;
+    height: 60%; } }
 
 body .contactContainer-address {
   background-image: url("./images/logo.png");

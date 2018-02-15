@@ -16,3 +16,24 @@ body {
         }
     }
 }
+// =============== media escritorio pequeño hasta 320
+@include mQ(mediumS){
+  body {
+    .location {
+      // background-color: bisque;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 10% 70% 20%;
+      &-map{
+        // background-color: royalblue;
+        grid-column: 1;
+        grid-row: 2 / 3;
+      }
+      &-mapText{
+        // background-color: seagreen;
+        grid-column: 1;
+        grid-row: 3 / -1;
+      }
+    }
+  }
+}
