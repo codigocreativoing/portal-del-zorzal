@@ -3310,6 +3310,18 @@ body .contactContainer {
     grid-row: 2;
     grid-column: 2; }
 
+@media screen and (max-width: 780px) {
+  body .contactContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 60% 30%; }
+    body .contactContainer-address {
+      grid-row: 3 / -1;
+      grid-column: 1; }
+    body .contactContainer-form {
+      grid-row: 2 / 3;
+      grid-column: 1; } }
+
 body {
   display: grid;
   grid-template-columns: repeat(4 1fr); }
@@ -3911,7 +3923,6 @@ body .headerM-project {
     display: flex;
     justify-content: center; }
   .mainContainer-info {
-    background-color: grey;
     padding: .5rem 0; }
     .mainContainer-info .patrocinadores {
       width: 100%; }
@@ -3982,17 +3993,21 @@ body .contactContainer-address {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 220px;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center; }
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column; }
   body .contactContainer-address .contactWrap {
-    text-align: center; }
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
     body .contactContainer-address .contactWrap-title {
-      width: 100%; }
+      width: 90%;
+      text-align: center; }
     body .contactContainer-address .contactWrap-phones {
-      width: 100%;
+      width: 90%;
       background-color: #ed8500;
-      width: 35rem;
       height: 7rem;
       display: flex;
       justify-content: center;
@@ -4001,90 +4016,100 @@ body .contactContainer-address {
       color: #fff; }
     body .contactContainer-address .contactWrap-icon {
       width: 40%;
-      margin-right: -3.5rem;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       font-size: 6.5rem; }
     body .contactContainer-address .contactWrap-text {
       width: 60%;
-      padding: 1rem 10rem 1rem 0;
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-wrap: wrap; }
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column; }
       body .contactContainer-address .contactWrap-text p {
-        display: inline;
-        width: 100%; }
-    body .contactContainer-address .contactWrap .url {
-      margin-top: 2rem;
-      width: 100%; }
+        margin-left: 2rem; }
+  body .contactContainer-address .url {
+    width: 90%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center; }
+    body .contactContainer-address .url p {
+      font-size: 1.5rem; }
 
 body .contactContainer-form {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
-  body .contactContainer-form .reg-form {
+  body .contactContainer-form form {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #ed8500;
     font-weight: bold; }
-    body .contactContainer-form .reg-form .datos .basicos {
+  body .contactContainer-form .datos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .contactContainer-form .datos label {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      body .contactContainer-form .reg-form .datos .basicos .lNombre {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem 0 1rem -2rem; }
-        body .contactContainer-form .reg-form .datos .basicos .lNombre .inNombre {
-          background-color: #cccc;
-          margin-top: .5rem;
-          margin-left: 2rem;
-          height: 2rem;
-          width: 30rem; }
-      body .contactContainer-form .reg-form .datos .basicos .lOrganizacion {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem 0 1rem -2rem; }
-        body .contactContainer-form .reg-form .datos .basicos .lOrganizacion .inOrganizacion {
-          background-color: #cccc;
-          margin: .5rem 0 -2rem 2rem;
-          height: 2rem;
-          width: 30rem; }
-    body .contactContainer-form .reg-form .datos .contacto {
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      body .contactContainer-form .reg-form .datos .contacto .lMail {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem 0 1rem -2rem; }
-      body .contactContainer-form .reg-form .datos .contacto .inMail {
-        background-color: #cccc;
-        margin: .5rem 0 -2rem 2rem;
-        height: 2rem;
-        width: 30rem; }
-    body .contactContainer-form .reg-form .mensaje {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      body .contactContainer-form .reg-form .mensaje .lMensaje {
-        display: flex;
-        flex-direction: column;
-        margin: 2rem 0 1rem -2rem; }
-      body .contactContainer-form .reg-form .mensaje .tArea {
-        background-color: #cccc;
-        margin: .5rem 0 0 2rem;
-        width: 30rem; }
-    body .contactContainer-form .reg-form .buttonContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+      margin: .5rem 0 .5rem -2rem; }
+    body .contactContainer-form .datos input {
+      background-color: #cccc;
+      height: 2rem;
+      width: 90%;
+      margin-left: 2rem; }
+  body .contactContainer-form .mensaje {
+    width: 100%;
+    margin: .5rem 0 .5rem -2rem;
+    display: flex;
+    flex-direction: column; }
+    body .contactContainer-form .mensaje .tArea {
+      background-color: #cccc;
+      width: 90%;
+      margin-left: 2rem; }
+  body .contactContainer-form .buttonContainer {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .contactContainer-form .buttonContainer button {
+      padding: .5rem 1.5rem;
+      background-color: #ed8500; }
+
+@media screen and (max-width: 780px) {
+  body .contactContainer-address .contactWrap {
+    margin-top: -1rem;
+    margin-bottom: 1rem; }
+    body .contactContainer-address .contactWrap-icon {
+      width: 30%;
+      font-size: 5.5rem; }
+    body .contactContainer-address .contactWrap-text {
+      width: 70%; }
+      body .contactContainer-address .contactWrap-text p {
+        margin-left: 2rem; }
+  body .contactContainer-address .url {
+    margin-bottom: 1rem; }
+    body .contactContainer-address .url p {
+      font-size: 1.2rem; }
+  body .contactContainer-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .contactContainer-form form {
+      margin-left: 6%; }
+    body .contactContainer-form .datos label {
+      margin: .2rem 0 .2rem -2rem; }
+    body .contactContainer-form .mensaje {
+      margin: .2rem 0 .2rem -2rem; }
+    body .contactContainer-form .buttonContainer {
+      margin: .5rem 0; }
+      body .contactContainer-form .buttonContainer button {
+        padding: .5rem 1.5rem; } }
 
 .piePagina {
   background-color: #ed8500; }

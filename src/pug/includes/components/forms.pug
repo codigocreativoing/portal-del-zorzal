@@ -2,16 +2,14 @@ mixin form()
   .reg-form
     form(action="https://formspree.io/informacion@refugiodelzorzal.co" method="POST")
       section.datos
-        .basicos
-          label.lNombre Nombre
-            input.inNombre(name="nombre" required)
-          label.lOrganizacion Organización
-            input.inOrganizacion(name="empresa")
-        .contacto
-          label.lMail e-mail
-            input.inMail(type="email" name="email" required)
+        label.lNombre Nombre
+          input.inNombre(name="nombre" required)
+        label.lOrganizacion Organización
+          input.inOrganizacion(name="empresa")
+        label.lMail e-mail
+          input.inMail(type="email" name="email" required)
       section.mensaje
         label.lMensaje mensaje
-          textarea.tArea(name="mensaje" id="mensaje" cols="50" rows="10" maxlength=200)
+          textarea.tArea(name="mensaje" id="mensaje" cols="50" rows="5" maxlength=200)
       .buttonContainer
         button(type="submit" class="btn") Enviar

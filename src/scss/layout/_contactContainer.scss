@@ -16,3 +16,83 @@ body {
     }
   }
 }
+
+// =============== media escritorio tv 1480
+@include mQ(flS){
+  body{
+    // background-color: brown;
+  }
+}
+
+
+// =============== media escritorio tv hasta 1360
+@include mQ(opS){
+  body{
+    // background-color: lawngreen;
+  }
+}
+
+
+// =============== media escritorio tv hasta 1200
+@include mQ(xlS){
+  body{
+    // background-color: red;
+  }
+}
+
+// =============== media escritorio portatil hasta 990
+@include mQ(largeS){
+  body{
+    // background-color: royalblue;
+  }
+}
+
+// =============== media escritorio normal hasta 760
+@include mQ(wideS){
+  body {
+  .contactContainer {
+    // background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 60% 30%;
+    &-address{
+      // background-color: palevioletred;
+      grid-row: 3 / -1;
+      grid-column: 1;
+    }
+    &-form{
+      // background-color: #ed8555;
+      grid-row: 2 / 3;
+      grid-column: 1;
+    }
+  }
+}
+}
+
+// =============== media escritorio pequeño hasta 760
+@include mQ(mediumS){
+  body{
+    // background-color: hotpink;
+  }
+}
+
+// =============== media escritorio tablets hasta 480
+@include mQ(smallS){
+  body{
+    // background-color: indigo;
+  }
+}
+
+// =============== media escritorio pequeño hasta 320
+@include mQ(mediumS){
+  body{
+    // background-color: yellow;
+  }
+}
+
+// =============== media escritorio telefonos menores de 320
+@include mQ(xsS){
+  body{
+    // background-color: green;
+  }
+}
