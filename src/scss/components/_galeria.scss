@@ -44,7 +44,7 @@ $calculo: $cantImages * $alto;
 // =============== media escritorio tv hasta 1360
 @include mQ(opS){
   body{
-    background-color: lawngreen;
+    // background-color: lawngreen;
   }
 }
 
@@ -52,14 +52,14 @@ $calculo: $cantImages * $alto;
 // =============== media escritorio tv hasta 1200
 @include mQ(xlS){
   body{
-    background-color: fuchsia;
+    // background-color: fuchsia;
   }
 }
 
 // =============== media escritorio portatil hasta 990
 @include mQ(largeS){
   body{
-    background-color: red;
+    // background-color: red;
   }
 }
 
@@ -86,14 +86,14 @@ $calculo: $cantImages * $alto;
 // =============== media escritorio tablets hasta 320
 @include mQ(smallS){
   body{
-    background-color: blue;
+    // background-color: blue;
   }
 }
 
 // =============== media escritorio telefonos menores de 320
 @include mQ(xsS){
   body{
-    background-color: green;
+    // background-color: green;
   }
 }
 

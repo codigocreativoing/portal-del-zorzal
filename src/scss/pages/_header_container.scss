@@ -87,7 +87,7 @@ body {
 // =============== media escritorio tv 1480
 @include mQ(flS){
   body{
-    background-color: brown;
+    // background-color: brown;
   }
 }
 
@@ -95,7 +95,7 @@ body {
 // =============== media escritorio tv hasta 1360
 @include mQ(opS){
   body{
-    background-color: lawngreen;
+    // background-color: lawngreen;
   }
 }
 
@@ -103,14 +103,14 @@ body {
 // =============== media escritorio tv hasta 1200
 @include mQ(xlS){
   body{
-    background-color: fuchsia;
+    // background-color: fuchsia;
   }
 }
 
 // =============== media escritorio portatil hasta 990
 @include mQ(largeS){
   body{
-    background-color: red;
+    // background-color: red;
   }
 }
 
@@ -168,7 +168,7 @@ body {
           flex-direction: column;
           margin-top: 0;
           .iBox{
-            width: 90%;
+            width: 70%;
             height: 35vh;
 
           }
@@ -180,7 +180,23 @@ body {
 
 // =============== media escritorio tablets hasta 320
 @include mQ(smallS){
-  body{
-    background-color: blue;
+  body {
+    .headerM {
+      &-project{
+        &--infoBox{
+          background-color: $color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 0;
+          .iBox{
+            // background-color: lightblue;
+            width: 85%;
+            height: 35vh;
+          }
+        }
+      }
+    }
   }
 }

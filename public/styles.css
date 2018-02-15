@@ -3185,39 +3185,31 @@ h1 {
   font-family: "Oswald", sans-serif; }
 
 h2 {
-  background-color: rgba(128, 0, 128, 0.411);
   font-size: 1.5rem;
   font-family: "Oswald", sans-serif; }
   @media screen and (min-width: 440px) {
     h2 {
-      background-color: rgba(0, 0, 255, 0.411);
       font-size: 1.8rem; } }
   @media screen and (min-width: 580px) {
     h2 {
-      background-color: rgba(0, 128, 0, 0.411);
       font-size: 2.25rem; } }
   @media screen and (min-width: 920px) {
     h2 {
-      background-color: rgba(255, 255, 0, 0.411);
       font-size: 3.375rem; } }
 
 h3 {
-  background-color: rgba(128, 0, 128, 0.21);
   font-size: 1.11111rem;
   line-height: 3rem;
   font-family: "Oswald", sans-serif;
   color: #f6c280; }
   @media screen and (min-width: 440px) {
     h3 {
-      background-color: rgba(0, 0, 255, 0.21);
       font-size: 1.2rem; } }
   @media screen and (min-width: 580px) {
     h3 {
-      background-color: rgba(0, 128, 0, 0.21);
       font-size: 1.5rem; } }
   @media screen and (min-width: 920px) {
     h3 {
-      background-color: rgba(255, 255, 0, 0.21);
       font-size: 2.25rem; } }
 
 p {
@@ -3270,6 +3262,19 @@ body .mainContainer {
     grid-row: 4 / 5; }
   body .mainContainer-info {
     grid-row: 5 / 6; }
+
+@media screen and (max-width: 580px) {
+  body .mainContainer {
+    height: 300vh;
+    grid-template-rows: 10% 55% 5%  20% 10%; }
+    body .mainContainer-infoBox {
+      grid-row: 2 / 3; }
+    body .mainContainer-descrip {
+      grid-row: 3 / 4; }
+    body .mainContainer-video {
+      grid-row: 4 / 5; }
+    body .mainContainer-info {
+      grid-row: 5 / 6; } }
 
 body .location {
   display: grid;
@@ -3536,19 +3541,7 @@ body {
   .galery input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
     opacity: 1; }
 
-@media screen and (max-width: 1360px) {
-  body {
-    background-color: lawngreen; } }
-
-@media screen and (max-width: 1200px) {
-  body {
-    background-color: fuchsia; } }
-
-@media screen and (max-width: 990px) {
-  body {
-    background-color: red; } }
-
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 780px) {
   .galery {
     height: 250px; }
     .galery-img {
@@ -3556,17 +3549,9 @@ body {
     .galery-input[type=radio] {
       bottom: -65%; } }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 580px) {
   .galery {
     display: none; } }
-
-@media screen and (max-width: 320px) {
-  body {
-    background-color: blue; } }
-
-@media screen and (max-width: 320px) {
-  body {
-    background-color: green; } }
 
 body .headerM-slider {
   display: flex;
@@ -3629,23 +3614,7 @@ body .headerM-project {
       background-size: 95%;
       object-fit: contain; }
 
-@media screen and (max-width: 1480px) {
-  body {
-    background-color: brown; } }
-
-@media screen and (max-width: 1360px) {
-  body {
-    background-color: lawngreen; } }
-
-@media screen and (max-width: 1200px) {
-  body {
-    background-color: fuchsia; } }
-
-@media screen and (max-width: 990px) {
-  body {
-    background-color: red; } }
-
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 780px) {
   body .headerM-slider {
     padding: 0; }
   body .headerM-project .titleInfo {
@@ -3663,7 +3632,7 @@ body .headerM-project {
       justify-content: center;
       align-items: center; } }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 580px) {
   body .headerM-slider .imgSlider {
     display: block;
     margin: -4.5rem 0 0 0; }
@@ -3678,40 +3647,49 @@ body .headerM-project {
     flex-direction: column;
     margin-top: 0; }
     body .headerM-project--infoBox .iBox {
-      width: 90%;
+      width: 70%;
       height: 35vh; } }
 
-@media screen and (max-width: 320px) {
-  body {
-    background-color: blue; } }
+@media screen and (max-width: 480px) {
+  body .headerM-project--infoBox {
+    background-color: #ed8500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0; }
+    body .headerM-project--infoBox .iBox {
+      width: 85%;
+      height: 35vh; } }
 
 .mainContainer-infoBox {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .mainContainer-infoBox .infoBoxGrap {
+  align-items: center;
+  flex-wrap: wrap; }
+  .mainContainer-infoBox .infoBoxWrap {
+    width: 32.5%;
     display: flex;
-    justify-content: center; }
-  .mainContainer-infoBox .image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25rem;
-    height: 15rem; }
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .mainContainer-infoBox .infoBoxWrap .ibImage {
+      width: 25rem;
+      height: 15rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
   .mainContainer-infoBox .content {
     text-align: center;
     margin-top: 1rem; }
   .mainContainer-infoBox .iBG01 {
-    margin-right: 1rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
-    .mainContainer-infoBox .iBG01 .image {
-      background-image: url("./images/c03.png"); }
+    background-image: url("./images/c03.png");
+    margin-right: 1%; }
   .mainContainer-infoBox .iBG02 {
-    margin-right: 1rem; }
-    .mainContainer-infoBox .iBG02 .image {
-      background-image: url("./images/c01.png"); }
-  .mainContainer-infoBox .iBG03 .image {
+    background-image: url("./images/c01.png");
+    margin-right: 1%; }
+  .mainContainer-infoBox .iBG03 {
     background-image: url("./images/c04.png"); }
 
 .mainContainer-descrip .titleDescrip {
@@ -3744,66 +3722,190 @@ body .headerM-project {
 
 .mainContainer-info {
   background-color: #ed8500;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .mainContainer-info .vigilado {
-    margin-right: -2.5rem; }
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 5rem; }
   .mainContainer-info .patrocinadores {
+    width: 97%;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
   .mainContainer-info .imPat {
-    margin: 0 3rem; }
+    margin: 0;
+    width: 20%; }
     .mainContainer-info .imPat h4 {
       text-align: center;
       margin-bottom: .5rem;
       color: #fff; }
   .mainContainer-info .i01 {
-    display: grid;
-    grid-template-rows: 60% 40%;
+    margin-right: 3%; }
+  .mainContainer-info .i02 {
+    margin-right: 2%; }
+  .mainContainer-info .i03 {
+    margin-right: 2%; }
+
+@media screen and (max-width: 1200px) {
+  .mainContainer-infoBox .infoBoxWrap .ibImage {
+    width: 21rem; }
+  .mainContainer-infoBox .content .titleInfoBox {
+    font-size: 1.8rem; } }
+
+@media screen and (max-width: 990px) {
+  .mainContainer-infoBox .infoBoxWrap .ibImage {
+    width: 17rem;
+    height: 12rem; }
+  .mainContainer-infoBox .content .titleInfoBox {
+    font-size: 1.5rem; }
+  .mainContainer-video .video {
+    width: 100%;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap; }
-  .mainContainer-info .fiduciaria {
+    align-items: center; }
+    .mainContainer-video .video iframe {
+      width: 100%; } }
+
+@media screen and (max-width: 780px) {
+  .mainContainer-infoBox .infoBoxWrap .ibImage {
+    width: 12rem;
+    height: 10rem; }
+  .mainContainer-infoBox .content .titleInfoBox {
+    font-size: 2rem; }
+  .mainContainer-video .video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mainContainer-video .video iframe {
+      width: 100%; }
+  .mainContainer-info {
+    padding: 0; }
+    .mainContainer-info .patrocinadores {
+      width: 97%; }
+    .mainContainer-info .imPat {
+      margin: 0;
+      width: 20%; }
+      .mainContainer-info .imPat h4 {
+        text-align: center;
+        margin-bottom: .5rem;
+        color: #fff; }
+  .mainContainer-descrip .descripciones {
+    display: flex;
+    flex-direction: row; }
+    .mainContainer-descrip .descripciones .listDescrip {
+      margin: .5rem 0;
+      display: flex;
+      flex-direction: column; }
+      .mainContainer-descrip .descripciones .listDescrip .fa {
+        color: #ed8500;
+        font-size: 1rem;
+        margin-right: .5rem; }
+      .mainContainer-descrip .descripciones .listDescrip li {
+        padding: .2rem 0; }
+    .mainContainer-descrip .descripciones .u01 {
+      margin-right: 4rem; } }
+
+@media screen and (max-width: 580px) {
+  .mainContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; }
+    .mainContainer-infoBox {
+      width: 100%;
+      margin: 0 0 1rem 0; }
+      .mainContainer-infoBox .infoBoxWrap {
+        width: 80%; }
+        .mainContainer-infoBox .infoBoxWrap .ibImage {
+          width: 17rem;
+          height: 10rem;
+          margin-top: 1rem; }
+        .mainContainer-infoBox .infoBoxWrap .iBG01 {
+          margin-top: -4rem; }
+        .mainContainer-infoBox .infoBoxWrap .iBG02, .mainContainer-infoBox .infoBoxWrap .iBG03 {
+          margin-top: 4rem; }
+      .mainContainer-infoBox .content .titleInfoBox {
+        font-size: 1.5rem; }
+    .mainContainer-video .video {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .mainContainer-video .video iframe {
+        width: 100%; }
+    .mainContainer-info {
+      padding: 0; }
+      .mainContainer-info .patrocinadores {
+        width: 100%; }
+      .mainContainer-info .imPat {
+        margin: 0;
+        width: 20%; }
+        .mainContainer-info .imPat h4 {
+          text-align: center;
+          margin-bottom: .5rem;
+          color: #fff; } }
+
+@media screen and (max-width: 480px) {
+  .mainContainer-infoBox {
+    width: 100%;
     flex-direction: column;
-    margin-bottom: .5rem; }
-
-@media screen and (max-width: 1480px) {
-  body {
-    background-color: brown; } }
-
-@media screen and (max-width: 1360px) {
-  body {
-    background-color: lawngreen; } }
-
-@media screen and (max-width: 1200px) {
-  body {
-    background-color: fuchsia; } }
-
-@media screen and (max-width: 990px) {
-  body {
-    background-color: red; } }
-
-@media screen and (max-width: 760px) {
-  body {
-    background-color: rebeccapurple; } }
-
-@media screen and (max-width: 440px) {
-  body {
-    background-color: yellow; } }
-
-@media screen and (max-width: 320px) {
-  body {
-    background-color: blue; } }
-
-@media screen and (max-width: 320px) {
-  body {
-    background-color: green; } }
+    flex-wrap: nowrap;
+    margin: 0 0 1rem 0; }
+    .mainContainer-infoBox .infoBoxWrap {
+      width: 90%; }
+      .mainContainer-infoBox .infoBoxWrap .ibImage {
+        width: 18rem;
+        height: 10rem; }
+      .mainContainer-infoBox .infoBoxWrap .iBG02, .mainContainer-infoBox .infoBoxWrap .iBG03 {
+        margin-top: 1rem; }
+    .mainContainer-infoBox .content .titleInfoBox {
+      font-size: 1.5rem; }
+  .mainContainer-descrip {
+    height: 50vh; }
+    .mainContainer-descrip .descripciones {
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: row; }
+      .mainContainer-descrip .descripciones .listDescrip {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+        .mainContainer-descrip .descripciones .listDescrip .fa {
+          color: #ed8500;
+          font-size: 1rem;
+          margin-right: .5rem; }
+        .mainContainer-descrip .descripciones .listDescrip li {
+          padding: .2rem 0; }
+      .mainContainer-descrip .descripciones .u01 {
+        margin-right: 1rem; }
+  .mainContainer-video .video {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mainContainer-video .video iframe {
+      width: 100%;
+      height: auto; }
+  .mainContainer-recurso {
+    display: flex;
+    justify-content: center; }
+  .mainContainer-info {
+    padding: .5rem 0; }
+    .mainContainer-info .patrocinadores {
+      width: 100%; }
+    .mainContainer-info .imPat {
+      margin: 0;
+      width: 50%;
+      height: auto; }
+      .mainContainer-info .imPat h4 {
+        text-align: center;
+        margin-bottom: .5rem;
+        color: #fff; } }
 
 body .location-map {
   display: flex;

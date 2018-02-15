@@ -37,16 +37,19 @@ body
 
   main.mainContainer#proyecto
     section.mainContainer-infoBox
-        .infoBoxWrap.iBG01
-          .image
+        .infoBoxWrap
+          .ibImage.iBG01
+            //- img(src="./images/c03.png", alt="prueba" height="230")
           .content
             h3.titleInfoBox CÓMODAS HABITACIONES
-        .infoBoxWrap.iBG02
-          .image
+        .infoBoxWrap
+          .ibImage.iBG02
+            //- img(src="./images/c01.png", alt="prueba" height="230")
           .content
             h3.titleInfoBox AMPLIOS ESPACIOS
-        .infoBoxWrap.iBG03
-          .image
+        .infoBoxWrap
+          .ibImage.iBG03
+            //- img(src="./images/c04.png", alt="prueba" height="230")
           .content
             h3.titleInfoBox ELEMENTOS ÚNICOS.
     .mainContainer-descrip
@@ -65,24 +68,19 @@ body
       .mainContainer-titulo
         h2 Recorrido Virtual
       .mainContainer-recurso
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/21hmTVEnl3w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        .video
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/21hmTVEnl3w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     .mainContainer-info
-      .vigilado
-        img(src="./images/vigilado.png" alt="Vigilado" height="170px")
       .patrocinadores
         .imPat.i01
-          .fiduciaria
-            h4 Fiduciaria
-            img(src="./images/fiduciaria.png" alt="fiduciria" height="60px")
-          .aviso
-            img(src="./images/anuncio.png" alt="anuncio" height="70px")
-        .imPat
+            img(src="./images/vigiladoF.png" alt="fiduciria" height="170px")
+        .imPat.i02
           h4 Diseño
           img(src="./images/diseño.png" alt="fiduciria" height="40px")
-        .imPat
+        .imPat.i03
           h4 Construye
           img(src="./images/construye.png" alt="fiduciria" height="40px")
-        .imPat
+        .imPat.i04
           h4 Promotor
           img(src="./images/promotor.png" alt="fiduciria" height="40px")
   section.location#ubicacion

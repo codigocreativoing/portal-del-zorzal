@@ -2,45 +2,45 @@
   // background-color: green;
   &-infoBox{
     // background-color: blue;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    .infoBoxGrap{
+    flex-wrap: wrap;
+    .infoBoxWrap{
+      // background-color: blue;
+      width: 32.5%;
       display: flex;
       justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      // img{
+      //   width: 100%;
+      // }
+      .ibImage{
+        width: 25rem;
+        height: 15rem;
+        // background-image: url('./images/c01.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     }
-    .image{
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 25rem;
-      height: 15rem;
-    }
+
     .content{
       text-align: center;
       margin-top: 1rem;
     }
     .iBG01{
-      // background-color: lawngreen;
-      margin-right: 1rem;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      .image{
-        background-image: url('./images/c03.png');
-      }
+      background-image: url('./images/c03.png');
+      margin-right: 1%;
     }
     .iBG02{
-      // background-color: lightcoral;
-      margin-right: 1rem;
-      .image{
-        background-image: url("./images/c01.png");
-      }
+      background-image: url('./images/c01.png');
+      margin-right: 1%;
     }
     .iBG03{
-      // background-color: lightseagreen;
-      .image{
-        background-image: url("./images/c04.png")
-      }
+      background-image: url('./images/c04.png');
     }
   }
   &-descrip{
@@ -79,50 +79,86 @@
     align-items: center;
     flex-direction: column;
   }
+  // &-info{
+  //   background-color: $color;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   .vigilado{
+  //     margin-right: -2.5rem;
+  //   }
+  //   .patrocinadores{
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+  //   .imPat{
+  //     margin: 0 3rem;
+  //     h4{
+  //       text-align: center;
+  //       margin-bottom: .5rem;
+  //       color: $clTextoGen;
+  //     }
+  //   }
+  //   .i01{
+  //     // background-color: yellowgreen;
+  //     display: grid;
+  //     grid-template-rows: 60% 40%;
+  //     justify-content: center;
+  //     align-items: center;
+  //     flex-direction: column;
+  //     flex-wrap: wrap;
+  //   }
+  //   .fiduciaria{
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     flex-direction: column;
+  //     margin-bottom: .5rem;
+  //   }
+  // }
   &-info{
-    background-color: $color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .vigilado{
-      margin-right: -2.5rem;
-    }
-    .patrocinadores{
+      background-color: $color;
+      width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-    }
-    .imPat{
-      margin: 0 3rem;
-      h4{
-        text-align: center;
-        margin-bottom: .5rem;
-        color: $clTextoGen;
+      flex-wrap: wrap;
+      padding: 0 5rem;
+      .patrocinadores{
+        // background-color: gold;
+        width: 97%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .imPat{
+        margin: 0;
+        width: 20%;
+        h4{
+          text-align: center;
+          margin-bottom: .5rem;
+          color: $clTextoGen;
+        }
+      }
+      .i01{
+        // background-color: yellowgreen;
+        margin-right: 3%;
+      }
+      .i02{
+        margin-right: 2%;
+      }
+      .i03{
+        margin-right: 2%;
       }
     }
-    .i01{
-      // background-color: yellowgreen;
-      display: grid;
-      grid-template-rows: 60% 40%;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    .fiduciaria{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-bottom: .5rem;
-    }
-  }
 }
 
 // =============== media escritorio tv 1480
 @include mQ(flS){
   body{
-    background-color: brown;
+    // background-color: brown;
   }
 }
 
@@ -130,56 +166,317 @@
 // =============== media escritorio tv hasta 1360
 @include mQ(opS){
   body{
-    background-color: lawngreen;
+    // background-color: lawngreen;
   }
 }
 
 
 // =============== media escritorio tv hasta 1200
 @include mQ(xlS){
-  body{
-    background-color: fuchsia;
+  .mainContainer{
+  // background-color: green;
+    &-infoBox{
+      .infoBoxWrap{
+        .ibImage{
+          width: 21rem;
+        }
+      }
+      .content{
+        .titleInfoBox{
+          font-size: 1.8rem;
+        }
+      }
+    }
   }
 }
 
 // =============== media escritorio portatil hasta 990
 @include mQ(largeS){
-  body{
-    background-color: red;
+  .mainContainer{
+  // background-color: blue;
+    &-infoBox{
+      .infoBoxWrap{
+        .ibImage{
+          width: 17rem;
+          height: 12rem;
+        }
+      }
+      .content{
+        .titleInfoBox{
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &-video{
+      // background-color: cadetblue;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-wrap: wrap;
+      .video{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe{
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
 // =============== media escritorio normal hasta 760
 @include mQ(wideS){
-  body{
-    background-color: rebeccapurple;
+  .mainContainer{
+  // background-color: blue;
+    &-infoBox{
+      .infoBoxWrap{
+        .ibImage{
+          width: 12rem;
+          height: 10rem;
+        }
+      }
+      .content{
+        .titleInfoBox{
+          font-size: 2rem;
+        }
+      }
+    }
+    &-video{
+      .video{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe{
+          width: 100%;
+        }
+      }
+    }
+    &-info{
+      padding: 0 ;
+      .patrocinadores{
+        width: 97%;
+      }
+      .imPat{
+        margin: 0;
+        width: 20%;
+        h4{
+          text-align: center;
+          margin-bottom: .5rem;
+          color: $clTextoGen;
+        }
+      }
+    }
+    &-descrip{
+      // background-color: indianred;
+      .titleDescrip{
+      }
+      .descripciones{
+        // background-color: yellow;
+        display: flex;
+        flex-direction: row;
+        .listDescrip{
+          margin: .5rem 0;
+          display: flex;
+          flex-direction: column;
+          .fa{
+            color: $color;
+            font-size: 1rem;
+            margin-right: .5rem;
+          }
+          li{
+            padding: .2rem 0;
+          }
+        }
+        .u01{
+          margin-right: 4rem;
+        }
+      }
+    }
   }
 }
 
-// =============== media escritorio pequeño hasta 480
+// =============== media escritorio pequeño hasta 780
+@include mQ(mediumS){
+  .mainContainer{
+  // background-color: olivedrab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+    &-infoBox{
+      // height: 100vh;
+      width: 100%;
+      // flex-direction: column;
+      // flex-wrap: nowrap;
+      margin: 0 0 1rem 0;
+      .infoBoxWrap{
+        width: 80%;
+        .ibImage{
+          width: 17rem;
+          height: 10rem;
+          margin-top: 1rem;
+        }
+        .iBG01{
+          margin-top: -4rem;
+        }
+        .iBG02, .iBG03{
+          margin-top: 4rem;
+        }
+      }
+      .content{
+        .titleInfoBox{
+          font-size: 1.5rem;
+        }
+      }
+    }
+    // &-descrip{
+    //   height: 50vh;
+    // }
+    &-video{
+      .video{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe{
+          width: 100%;
+        }
+      }
+    }
+    &-info{
+      padding: 0;
+      .patrocinadores{
+        width: 100%;
+      }
+      .imPat{
+        margin: 0;
+        width: 20%;
+        h4{
+          text-align: center;
+          margin-bottom: .5rem;
+          color: $clTextoGen;
+        }
+      }
+    }
+  }
+}
+
+// =============== media escritorio tablets hasta 480
+@include mQ(smallS){
+  .mainContainer{
+    &-infoBox{
+      // height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: 0 0 1rem 0;
+      .infoBoxWrap{
+        // background-color: indigo;
+        width: 90%;
+        .ibImage{
+          width: 18rem;
+          height: 10rem;
+          // margin-top: 1rem;
+        }
+        .iBG01{
+          // margin-top: -4rem;
+        }
+        .iBG02, .iBG03{
+          margin-top: 1rem;
+        }
+      }
+      .content{
+        .titleInfoBox{
+          font-size: 1.5rem;
+        }
+      }
+    }
+    // &-descrip{
+    //   height: 50vh;
+    // }
+    &-descrip{
+      height: 50vh;
+      .titleDescrip{
+      }
+      .descripciones{
+        // background-color: green;
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: row;
+        // margin-bottom: 2rem;
+        .listDescrip{
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          // text-align: center;
+          .fa{
+            color: $color;
+            font-size: 1rem;
+            margin-right: .5rem;
+          }
+          li{
+            padding: .2rem 0;
+          }
+        }
+        .u01{
+          margin-right: 1rem;
+        }
+      }
+    }
+    &-video{
+      // margin-top: 4rem;
+      .video{
+        // background-color: orchid;
+        width: 80%;
+        // height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    &-recurso{
+      display: flex;
+      justify-content: center;
+    }
+    &-info{
+      // background-color: grey;
+      padding: .5rem 0;
+      .patrocinadores{
+        width: 100%;
+      }
+      .imPat{
+        margin: 0;
+        width: 50%;
+        height: auto;
+        h4{
+          text-align: center;
+          margin-bottom: .5rem;
+          color: $clTextoGen;
+        }
+      }
+    }
+  }
+}
+
+// =============== media escritorio pequeño hasta 320
 @include mQ(mediumS){
   body{
-    background-color: yellow;
-  }
-}
-
-// =============== media escritorio tablets hasta 320
-@include mQ(smallS){
-  body{
-    background-color: blue;
+    // background-color: yellow;
   }
 }
 
 // =============== media escritorio telefonos menores de 320
 @include mQ(xsS){
   body{
-    background-color: green;
+    // background-color: green;
   }
 }
-
-// // =============== media escritorio iphoneRetina hasta 320
-// @include mQ(smallS){
-//   body{
-//     background-color: purple;
-//   }
-// }
