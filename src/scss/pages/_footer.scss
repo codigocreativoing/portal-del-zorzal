@@ -9,10 +9,11 @@
     flex-direction: column;
     color: $clTextoGen;
     .t1{
-      margin-top: 1rem;
+      margin-top: .5rem;
+      text-align: center;
     }
     .t2{
-      // margin-top: .5rem;
+      text-align: center;
     }
   }
   &-logoFinal{
@@ -25,5 +26,30 @@
     &:hover{
       color: $secundario;
     }
+  }
+}
+
+// =============== media escritorio pequeño hasta 320
+@include mQ(mediumS){
+  .piePagina{
+    a{
+    }
+    &-copyright{
+      .t1{
+      }
+      .t2{
+        text-align: center;
+      }
+      .t3{
+        text-align: center;
+      }
+    }
+  }
+}
+
+// =============== media escritorio telefonos menores de 320
+@include mQ(xsS){
+  body{
+    // background-color: green;
   }
 }
