@@ -4089,10 +4089,6 @@ body .location-mapText {
     height: 60%; } }
 
 body .contactContainer-address {
-  background-image: url("./images/logo.png");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 220px;
   width: 100%;
   display: flex;
   justify-content: center;
